@@ -1,0 +1,24 @@
+{
+  "name": "@bugbearr/parseurisimple",
+  "description": "Simple URI Parser",
+  "version": "0.0.1",
+  "author": "BugbearR <bugbearr@gmail.com>",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "license": "CC0-1.0",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "github:bugbearr/parseurlsimple-js",
+  "scripts": {
+    "test": "jest"
+  }
+}

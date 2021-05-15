@@ -1,0 +1,5245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`input: "  \\t" 1`] = `
+Object {
+  "href": "  	",
+  "path": "  	",
+}
+`;
+
+exports[`input: "  File:c|////foo\\\\bar.html" 1`] = `
+Object {
+  "href": "  File:c|////foo\\\\bar.html",
+  "path": "  File:c|////foo\\\\bar.html",
+}
+`;
+
+exports[`input: " foo.com  " 1`] = `
+Object {
+  "href": " foo.com  ",
+  "path": " foo.com  ",
+}
+`;
+
+exports[`input: "" 1`] = `
+Object {
+  "href": "",
+}
+`;
+
+exports[`input: "#" 1`] = `
+Object {
+  "fragment": "",
+  "href": "#",
+}
+`;
+
+exports[`input: "#/" 1`] = `
+Object {
+  "fragment": "/",
+  "href": "#/",
+}
+`;
+
+exports[`input: "#;?" 1`] = `
+Object {
+  "fragment": ";?",
+  "href": "#;?",
+}
+`;
+
+exports[`input: "#\\\\" 1`] = `
+Object {
+  "fragment": "\\\\",
+  "href": "#\\\\",
+}
+`;
+
+exports[`input: "#i" 1`] = `
+Object {
+  "fragment": "i",
+  "href": "#i",
+}
+`;
+
+exports[`input: "#link" 1`] = `
+Object {
+  "fragment": "link",
+  "href": "#link",
+}
+`;
+
+exports[`input: "#x" 1`] = `
+Object {
+  "fragment": "x",
+  "href": "#x",
+}
+`;
+
+exports[`input: "#β" 1`] = `
+Object {
+  "fragment": "β",
+  "href": "#β",
+}
+`;
+
+exports[`input: "." 1`] = `
+Object {
+  "href": ".",
+  "path": ".",
+}
+`;
+
+exports[`input: ".." 1`] = `
+Object {
+  "href": "..",
+  "path": "..",
+}
+`;
+
+exports[`input: "../../test.txt" 1`] = `
+Object {
+  "href": "../../test.txt",
+  "path": "../../test.txt",
+}
+`;
+
+exports[`input: "..//path" 1`] = `
+Object {
+  "href": "..//path",
+  "path": "..//path",
+}
+`;
+
+exports[`input: "../aaa/test.txt" 1`] = `
+Object {
+  "href": "../aaa/test.txt",
+  "path": "../aaa/test.txt",
+}
+`;
+
+exports[`input: "../i" 1`] = `
+Object {
+  "href": "../i",
+  "path": "../i",
+}
+`;
+
+exports[`input: "../path" 1`] = `
+Object {
+  "href": "../path",
+  "path": "../path",
+}
+`;
+
+exports[`input: "../test.txt" 1`] = `
+Object {
+  "href": "../test.txt",
+  "path": "../test.txt",
+}
+`;
+
+exports[`input: "./test.txt" 1`] = `
+Object {
+  "href": "./test.txt",
+  "path": "./test.txt",
+}
+`;
+
+exports[`input: "/" 1`] = `
+Object {
+  "href": "/",
+  "path": "/",
+}
+`;
+
+exports[`input: "/..//localhost//pig" 1`] = `
+Object {
+  "href": "/..//localhost//pig",
+  "path": "/..//localhost//pig",
+}
+`;
+
+exports[`input: "/..//path" 1`] = `
+Object {
+  "href": "/..//path",
+  "path": "/..//path",
+}
+`;
+
+exports[`input: "/.//path" 1`] = `
+Object {
+  "href": "/.//path",
+  "path": "/.//path",
+}
+`;
+
+exports[`input: "//" 1`] = `
+Object {
+  "authority": "",
+  "href": "//",
+}
+`;
+
+exports[`input: "///" 1`] = `
+Object {
+  "authority": "",
+  "href": "///",
+  "path": "/",
+}
+`;
+
+exports[`input: "////" 1`] = `
+Object {
+  "authority": "",
+  "href": "////",
+  "path": "//",
+}
+`;
+
+exports[`input: "/////mouse" 1`] = `
+Object {
+  "authority": "",
+  "href": "/////mouse",
+  "path": "///mouse",
+}
+`;
+
+exports[`input: "////one/two" 1`] = `
+Object {
+  "authority": "",
+  "href": "////one/two",
+  "path": "//one/two",
+}
+`;
+
+exports[`input: "////x/" 1`] = `
+Object {
+  "authority": "",
+  "href": "////x/",
+  "path": "//x/",
+}
+`;
+
+exports[`input: "///C:/" 1`] = `
+Object {
+  "authority": "",
+  "href": "///C:/",
+  "path": "/C:/",
+}
+`;
+
+exports[`input: "///one/two" 1`] = `
+Object {
+  "authority": "",
+  "href": "///one/two",
+  "path": "/one/two",
+}
+`;
+
+exports[`input: "///test" 1`] = `
+Object {
+  "authority": "",
+  "href": "///test",
+  "path": "/test",
+}
+`;
+
+exports[`input: "//C:/" 1`] = `
+Object {
+  "authority": "C:",
+  "host": "C:",
+  "hostname": "C",
+  "href": "//C:/",
+  "path": "/",
+  "port": "",
+}
+`;
+
+exports[`input: "//C|/foo/bar" 1`] = `
+Object {
+  "authority": "C|",
+  "host": "C|",
+  "hostname": "C|",
+  "href": "//C|/foo/bar",
+  "path": "/foo/bar",
+}
+`;
+
+exports[`input: "//d:" 1`] = `
+Object {
+  "authority": "d:",
+  "host": "d:",
+  "hostname": "d",
+  "href": "//d:",
+  "port": "",
+}
+`;
+
+exports[`input: "//d:/.." 1`] = `
+Object {
+  "authority": "d:",
+  "host": "d:",
+  "hostname": "d",
+  "href": "//d:/..",
+  "path": "/..",
+  "port": "",
+}
+`;
+
+exports[`input: "//foo/bar" 1`] = `
+Object {
+  "authority": "foo",
+  "host": "foo",
+  "hostname": "foo",
+  "href": "//foo/bar",
+  "path": "/bar",
+}
+`;
+
+exports[`input: "//localhost//pig" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "//localhost//pig",
+  "path": "//pig",
+}
+`;
+
+exports[`input: "//one/two" 1`] = `
+Object {
+  "authority": "one",
+  "host": "one",
+  "hostname": "one",
+  "href": "//one/two",
+  "path": "/two",
+}
+`;
+
+exports[`input: "//server/file" 1`] = `
+Object {
+  "authority": "server",
+  "host": "server",
+  "hostname": "server",
+  "href": "//server/file",
+  "path": "/file",
+}
+`;
+
+exports[`input: "//www.example2.com" 1`] = `
+Object {
+  "authority": "www.example2.com",
+  "host": "www.example2.com",
+  "hostname": "www.example2.com",
+  "href": "//www.example2.com",
+}
+`;
+
+exports[`input: "/:23" 1`] = `
+Object {
+  "href": "/:23",
+  "path": "/:23",
+}
+`;
+
+exports[`input: "/?chai" 1`] = `
+Object {
+  "href": "/?chai",
+  "path": "/",
+  "query": "chai",
+}
+`;
+
+exports[`input: "/\\\\server/file" 1`] = `
+Object {
+  "authority": "server",
+  "host": "server",
+  "hostname": "server",
+  "href": "/\\\\server/file",
+  "path": "/file",
+}
+`;
+
+exports[`input: "/C:/" 1`] = `
+Object {
+  "href": "/C:/",
+  "path": "/C:/",
+}
+`;
+
+exports[`input: "/C|\\\\foo\\\\bar" 1`] = `
+Object {
+  "href": "/C|\\\\foo\\\\bar",
+  "path": "/C|\\\\foo\\\\bar",
+}
+`;
+
+exports[`input: "/a%2fc" 1`] = `
+Object {
+  "href": "/a%2fc",
+  "path": "/a%2fc",
+}
+`;
+
+exports[`input: "/a/ /c" 1`] = `
+Object {
+  "href": "/a/ /c",
+  "path": "/a/ /c",
+}
+`;
+
+exports[`input: "/a/%2f/c" 1`] = `
+Object {
+  "href": "/a/%2f/c",
+  "path": "/a/%2f/c",
+}
+`;
+
+exports[`input: "/a/b/c" 1`] = `
+Object {
+  "href": "/a/b/c",
+  "path": "/a/b/c",
+}
+`;
+
+exports[`input: "/c:/foo/bar" 1`] = `
+Object {
+  "href": "/c:/foo/bar",
+  "path": "/c:/foo/bar",
+}
+`;
+
+exports[`input: "/c|/foo/bar" 1`] = `
+Object {
+  "href": "/c|/foo/bar",
+  "path": "/c|/foo/bar",
+}
+`;
+
+exports[`input: "/i" 1`] = `
+Object {
+  "href": "/i",
+  "path": "/i",
+}
+`;
+
+exports[`input: "/rooibos" 1`] = `
+Object {
+  "href": "/rooibos",
+  "path": "/rooibos",
+}
+`;
+
+exports[`input: "/some/path" 1`] = `
+Object {
+  "href": "/some/path",
+  "path": "/some/path",
+}
+`;
+
+exports[`input: "/test.txt" 1`] = `
+Object {
+  "href": "/test.txt",
+  "path": "/test.txt",
+}
+`;
+
+exports[`input: ":" 1`] = `
+Object {
+  "href": ":",
+  "path": ":",
+}
+`;
+
+exports[`input: ":#" 1`] = `
+Object {
+  "fragment": "",
+  "href": ":#",
+  "path": ":",
+}
+`;
+
+exports[`input: ":/" 1`] = `
+Object {
+  "href": ":/",
+  "path": ":/",
+}
+`;
+
+exports[`input: "::" 1`] = `
+Object {
+  "href": "::",
+  "path": "::",
+}
+`;
+
+exports[`input: "::23" 1`] = `
+Object {
+  "href": "::23",
+  "path": "::23",
+}
+`;
+
+exports[`input: ":\\\\" 1`] = `
+Object {
+  "href": ":\\\\",
+  "path": ":\\\\",
+}
+`;
+
+exports[`input: ":23" 1`] = `
+Object {
+  "href": ":23",
+  "path": ":23",
+}
+`;
+
+exports[`input: ":a" 1`] = `
+Object {
+  "href": ":a",
+  "path": ":a",
+}
+`;
+
+exports[`input: ":foo.com/" 1`] = `
+Object {
+  "href": ":foo.com/",
+  "path": ":foo.com/",
+}
+`;
+
+exports[`input: ":foo.com\\\\" 1`] = `
+Object {
+  "href": ":foo.com\\\\",
+  "path": ":foo.com\\\\",
+}
+`;
+
+exports[`input: "?" 1`] = `
+Object {
+  "href": "?",
+  "query": "",
+}
+`;
+
+exports[`input: "??a=b&c=d" 1`] = `
+Object {
+  "href": "??a=b&c=d",
+  "query": "?a=b&c=d",
+}
+`;
+
+exports[`input: "?a=b&c=d" 1`] = `
+Object {
+  "href": "?a=b&c=d",
+  "query": "a=b&c=d",
+}
+`;
+
+exports[`input: "?i" 1`] = `
+Object {
+  "href": "?i",
+  "query": "i",
+}
+`;
+
+exports[`input: "?x" 1`] = `
+Object {
+  "href": "?x",
+  "query": "x",
+}
+`;
+
+exports[`input: "[61:24:74]:98" 1`] = `
+Object {
+  "href": "[61:24:74]:98",
+  "path": "[61:24:74]:98",
+}
+`;
+
+exports[`input: "\\\\//pig" 1`] = `
+Object {
+  "authority": "",
+  "href": "\\\\//pig",
+  "path": "/pig",
+}
+`;
+
+exports[`input: "\\\\/localhost//pig" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "\\\\/localhost//pig",
+  "path": "//pig",
+}
+`;
+
+exports[`input: "\\\\\\\\\\\\.\\\\Y:" 1`] = `
+Object {
+  "authority": "",
+  "href": "\\\\\\\\\\\\.\\\\Y:",
+  "path": "\\\\.\\\\Y:",
+}
+`;
+
+exports[`input: "\\\\\\\\\\\\.\\\\y:" 1`] = `
+Object {
+  "authority": "",
+  "href": "\\\\\\\\\\\\.\\\\y:",
+  "path": "\\\\.\\\\y:",
+}
+`;
+
+exports[`input: "\\\\\\\\server\\\\file" 1`] = `
+Object {
+  "authority": "server",
+  "host": "server",
+  "hostname": "server",
+  "href": "\\\\\\\\server\\\\file",
+  "path": "\\\\file",
+}
+`;
+
+exports[`input: "\\t   :foo.com   \\n" 1`] = `
+Object {
+  "href": "	   :foo.com   
+",
+  "path": "	   :foo.com   
+",
+}
+`;
+
+exports[`input: "\\u0000\\u001b\\u0004\\u0012 http://example.com/\\u001f \\r " 1`] = `
+Object {
+  "href": "  http://example.com/ 
+ ",
+  "path": "  http://example.com/ 
+ ",
+}
+`;
+
+exports[`input: "10.0.0.7:8080/foo.html" 1`] = `
+Object {
+  "href": "10.0.0.7:8080/foo.html",
+  "path": "10.0.0.7:8080/foo.html",
+}
+`;
+
+exports[`input: "C" 1`] = `
+Object {
+  "href": "C",
+  "path": "C",
+}
+`;
+
+exports[`input: "C|" 1`] = `
+Object {
+  "href": "C|",
+  "path": "C|",
+}
+`;
+
+exports[`input: "C|#" 1`] = `
+Object {
+  "fragment": "",
+  "href": "C|#",
+  "path": "C|",
+}
+`;
+
+exports[`input: "C|/" 1`] = `
+Object {
+  "href": "C|/",
+  "path": "C|/",
+}
+`;
+
+exports[`input: "C|/foo/bar" 1`] = `
+Object {
+  "href": "C|/foo/bar",
+  "path": "C|/foo/bar",
+}
+`;
+
+exports[`input: "C|?" 1`] = `
+Object {
+  "href": "C|?",
+  "path": "C|",
+  "query": "",
+}
+`;
+
+exports[`input: "C|\\\\" 1`] = `
+Object {
+  "href": "C|\\\\",
+  "path": "C|\\\\",
+}
+`;
+
+exports[`input: "C|\\n/" 1`] = `
+Object {
+  "href": "C|
+/",
+  "path": "C|
+/",
+}
+`;
+
+exports[`input: "C|a" 1`] = `
+Object {
+  "href": "C|a",
+  "path": "C|a",
+}
+`;
+
+exports[`input: "a!@$*=/foo.html" 1`] = `
+Object {
+  "href": "a!@$*=/foo.html",
+  "path": "a!@$*=/foo.html",
+}
+`;
+
+exports[`input: "a" 1`] = `
+Object {
+  "href": "a",
+  "path": "a",
+}
+`;
+
+exports[`input: "a/" 1`] = `
+Object {
+  "href": "a/",
+  "path": "a/",
+}
+`;
+
+exports[`input: "a/..//path" 1`] = `
+Object {
+  "href": "a/..//path",
+  "path": "a/..//path",
+}
+`;
+
+exports[`input: "a//" 1`] = `
+Object {
+  "href": "a//",
+  "path": "a//",
+}
+`;
+
+exports[`input: "a:\\t foo.com" 1`] = `
+Object {
+  "href": "a:	 foo.com",
+  "path": "	 foo.com",
+  "scheme": "a",
+}
+`;
+
+exports[`input: "a1234567890-+.:foo/bar" 1`] = `
+Object {
+  "href": "a1234567890-+.:foo/bar",
+  "path": "foo/bar",
+  "scheme": "a1234567890-+.",
+}
+`;
+
+exports[`input: "about:/../" 1`] = `
+Object {
+  "href": "about:/../",
+  "path": "/../",
+  "scheme": "about",
+}
+`;
+
+exports[`input: "asdf://%43%7C/" 1`] = `
+Object {
+  "authority": "%43%7C",
+  "host": "%43%7C",
+  "hostname": "%43%7C",
+  "href": "asdf://%43%7C/",
+  "path": "/",
+  "scheme": "asdf",
+}
+`;
+
+exports[`input: "asdf://%43|/" 1`] = `
+Object {
+  "authority": "%43|",
+  "host": "%43|",
+  "hostname": "%43|",
+  "href": "asdf://%43|/",
+  "path": "/",
+  "scheme": "asdf",
+}
+`;
+
+exports[`input: "blob:d3958f5c-0777-0845-9dcf-2cb28783acaf" 1`] = `
+Object {
+  "href": "blob:d3958f5c-0777-0845-9dcf-2cb28783acaf",
+  "path": "d3958f5c-0777-0845-9dcf-2cb28783acaf",
+  "scheme": "blob",
+}
+`;
+
+exports[`input: "blob:https://example.com:443/" 1`] = `
+Object {
+  "href": "blob:https://example.com:443/",
+  "path": "https://example.com:443/",
+  "scheme": "blob",
+}
+`;
+
+exports[`input: "c:/foo" 1`] = `
+Object {
+  "href": "c:/foo",
+  "path": "/foo",
+  "scheme": "c",
+}
+`;
+
+exports[`input: "data:/../" 1`] = `
+Object {
+  "href": "data:/../",
+  "path": "/../",
+  "scheme": "data",
+}
+`;
+
+exports[`input: "data:/example.com/" 1`] = `
+Object {
+  "href": "data:/example.com/",
+  "path": "/example.com/",
+  "scheme": "data",
+}
+`;
+
+exports[`input: "data:example.com/" 1`] = `
+Object {
+  "href": "data:example.com/",
+  "path": "example.com/",
+  "scheme": "data",
+}
+`;
+
+exports[`input: "data:test# »" 1`] = `
+Object {
+  "fragment": " »",
+  "href": "data:test# »",
+  "path": "test",
+  "scheme": "data",
+}
+`;
+
+exports[`input: "data:text/html,test#test" 1`] = `
+Object {
+  "fragment": "test",
+  "href": "data:text/html,test#test",
+  "path": "text/html,test",
+  "scheme": "data",
+}
+`;
+
+exports[`input: "dns://fw.example.org:9999/foo.bar.org?type=TXT" 1`] = `
+Object {
+  "authority": "fw.example.org:9999",
+  "host": "fw.example.org:9999",
+  "hostname": "fw.example.org",
+  "href": "dns://fw.example.org:9999/foo.bar.org?type=TXT",
+  "path": "/foo.bar.org",
+  "port": "9999",
+  "query": "type=TXT",
+  "scheme": "dns",
+}
+`;
+
+exports[`input: "file:" 1`] = `
+Object {
+  "href": "file:",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:#frag" 1`] = `
+Object {
+  "fragment": "frag",
+  "href": "file:#frag",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:#x" 1`] = `
+Object {
+  "fragment": "x",
+  "href": "file:#x",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:.." 1`] = `
+Object {
+  "href": "file:..",
+  "path": "..",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:..." 1`] = `
+Object {
+  "href": "file:...",
+  "path": "...",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:.//p" 1`] = `
+Object {
+  "href": "file:.//p",
+  "path": ".//p",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:/.//p" 1`] = `
+Object {
+  "href": "file:/.//p",
+  "path": "/.//p",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://" 1`] = `
+Object {
+  "authority": "",
+  "href": "file://",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://%43%3A" 1`] = `
+Object {
+  "authority": "%43%3A",
+  "host": "%43%3A",
+  "hostname": "%43%3A",
+  "href": "file://%43%3A",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://%43%7C" 1`] = `
+Object {
+  "authority": "%43%7C",
+  "host": "%43%7C",
+  "hostname": "%43%7C",
+  "href": "file://%43%7C",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://%43%7C/" 1`] = `
+Object {
+  "authority": "%43%7C",
+  "host": "%43%7C",
+  "hostname": "%43%7C",
+  "href": "file://%43%7C/",
+  "path": "/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://%43|" 1`] = `
+Object {
+  "authority": "%43|",
+  "host": "%43|",
+  "hostname": "%43|",
+  "href": "file://%43|",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://%C2%AD/p" 1`] = `
+Object {
+  "authority": "%C2%AD",
+  "host": "%C2%AD",
+  "hostname": "%C2%AD",
+  "href": "file://%C2%AD/p",
+  "path": "/p",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///.//" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///.//",
+  "path": "/.//",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///./Y" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///./Y",
+  "path": "/./Y",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///./Y:" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///./Y:",
+  "path": "/./Y:",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///./y" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///./y",
+  "path": "/./y",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///./y:" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///./y:",
+  "path": "/./y:",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:////foo" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:////foo",
+  "path": "//foo",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:////one/two" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:////one/two",
+  "path": "//one/two",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///C%3A/" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///C%3A/",
+  "path": "/C%3A/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///C%7C/" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///C%7C/",
+  "path": "/C%7C/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///C:/" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///C:/",
+  "path": "/C:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///Y:" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///Y:",
+  "path": "/Y:",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///Y:/" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///Y:/",
+  "path": "/Y:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///foo/bar.txt" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///foo/bar.txt",
+  "path": "/foo/bar.txt",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///home/me" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///home/me",
+  "path": "/home/me",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///localhost//cat" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///localhost//cat",
+  "path": "/localhost//cat",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///one/two" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///one/two",
+  "path": "/one/two",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///y:" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///y:",
+  "path": "/y:",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:///y:/" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:///y:/",
+  "path": "/y:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://[1::8]/C:/" 1`] = `
+Object {
+  "authority": "[1::8]",
+  "host": "[1::8]",
+  "hostname": "[1::8]",
+  "href": "file://[1::8]/C:/",
+  "path": "/C:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://[example]/" 1`] = `
+Object {
+  "authority": "[example]",
+  "host": "[example]",
+  "hostname": "[example]",
+  "href": "file://[example]/",
+  "path": "/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://\\\\/localhost//cat" 1`] = `
+Object {
+  "authority": "",
+  "href": "file://\\\\/localhost//cat",
+  "path": "\\\\/localhost//cat",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://1.2.3.4/C:/" 1`] = `
+Object {
+  "authority": "1.2.3.4",
+  "host": "1.2.3.4",
+  "hostname": "1.2.3.4",
+  "href": "file://1.2.3.4/C:/",
+  "path": "/C:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://C%7C" 1`] = `
+Object {
+  "authority": "C%7C",
+  "host": "C%7C",
+  "hostname": "C%7C",
+  "href": "file://C%7C",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://C:/" 1`] = `
+Object {
+  "authority": "C:",
+  "host": "C:",
+  "hostname": "C",
+  "href": "file://C:/",
+  "path": "/",
+  "port": "",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://C|/" 1`] = `
+Object {
+  "authority": "C|",
+  "host": "C|",
+  "hostname": "C|",
+  "href": "file://C|/",
+  "path": "/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://a%C2%ADb/p" 1`] = `
+Object {
+  "authority": "a%C2%ADb",
+  "host": "a%C2%ADb",
+  "hostname": "a%C2%ADb",
+  "href": "file://a%C2%ADb/p",
+  "path": "/p",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://a­b/p" 1`] = `
+Object {
+  "authority": "a­b",
+  "host": "a­b",
+  "hostname": "a­b",
+  "href": "file://a­b/p",
+  "path": "/p",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://example%/" 1`] = `
+Object {
+  "authority": "example%",
+  "host": "example%",
+  "hostname": "example%",
+  "href": "file://example%/",
+  "path": "/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://example.net/C:/" 1`] = `
+Object {
+  "authority": "example.net",
+  "host": "example.net",
+  "hostname": "example.net",
+  "href": "file://example.net/C:/",
+  "path": "/C:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://example:1/" 1`] = `
+Object {
+  "authority": "example:1",
+  "host": "example:1",
+  "hostname": "example",
+  "href": "file://example:1/",
+  "path": "/",
+  "port": "1",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://example:test/" 1`] = `
+Object {
+  "authority": "example:test",
+  "host": "example:test",
+  "hostname": "example",
+  "href": "file://example:test/",
+  "path": "/",
+  "port": "test",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://localhost" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "file://localhost",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://localhost/" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "file://localhost/",
+  "path": "/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://localhost////foo" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "file://localhost////foo",
+  "path": "////foo",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://localhost//a//../..//" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "file://localhost//a//../..//",
+  "path": "//a//../..//",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://localhost//a//../..//foo" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "file://localhost//a//../..//foo",
+  "path": "//a//../..//foo",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://localhost/test" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "file://localhost/test",
+  "path": "/test",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://spider///" 1`] = `
+Object {
+  "authority": "spider",
+  "host": "spider",
+  "hostname": "spider",
+  "href": "file://spider///",
+  "path": "///",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://test" 1`] = `
+Object {
+  "authority": "test",
+  "host": "test",
+  "hostname": "test",
+  "href": "file://test",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://xn--/p" 1`] = `
+Object {
+  "authority": "xn--",
+  "host": "xn--",
+  "hostname": "xn--",
+  "href": "file://xn--/p",
+  "path": "/p",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file://­/p" 1`] = `
+Object {
+  "authority": "­",
+  "host": "­",
+  "hostname": "­",
+  "href": "file://­/p",
+  "path": "/p",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:/C:/" 1`] = `
+Object {
+  "href": "file:/C:/",
+  "path": "/C:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:/C|/" 1`] = `
+Object {
+  "href": "file:/C|/",
+  "path": "/C|/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:/example.com/" 1`] = `
+Object {
+  "href": "file:/example.com/",
+  "path": "/example.com/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:?q=v" 1`] = `
+Object {
+  "href": "file:?q=v",
+  "query": "q=v",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:?x" 1`] = `
+Object {
+  "href": "file:?x",
+  "query": "x",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:\\\\\\\\//" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:\\\\\\\\//",
+  "path": "//",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:\\\\\\\\\\\\\\\\" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:\\\\\\\\\\\\\\\\",
+  "path": "\\\\\\\\",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:\\\\\\\\\\\\\\\\#guppy" 1`] = `
+Object {
+  "authority": "",
+  "fragment": "guppy",
+  "href": "file:\\\\\\\\\\\\\\\\#guppy",
+  "path": "\\\\\\\\",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:\\\\\\\\\\\\\\\\?fox" 1`] = `
+Object {
+  "authority": "",
+  "href": "file:\\\\\\\\\\\\\\\\?fox",
+  "path": "\\\\\\\\",
+  "query": "fox",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:\\\\\\\\localhost//" 1`] = `
+Object {
+  "authority": "localhost",
+  "host": "localhost",
+  "hostname": "localhost",
+  "href": "file:\\\\\\\\localhost//",
+  "path": "//",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:\\\\c:\\\\foo\\\\bar" 1`] = `
+Object {
+  "href": "file:\\\\c:\\\\foo\\\\bar",
+  "path": "\\\\c:\\\\foo\\\\bar",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:C:/" 1`] = `
+Object {
+  "href": "file:C:/",
+  "path": "C:/",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:a" 1`] = `
+Object {
+  "href": "file:a",
+  "path": "a",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:c:\\\\foo\\\\bar.html" 1`] = `
+Object {
+  "href": "file:c:\\\\foo\\\\bar.html",
+  "path": "c:\\\\foo\\\\bar.html",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "file:test" 1`] = `
+Object {
+  "href": "file:test",
+  "path": "test",
+  "scheme": "file",
+}
+`;
+
+exports[`input: "foo:/" 1`] = `
+Object {
+  "href": "foo:/",
+  "path": "/",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo:// !\\"$%&'()*+,-.;<=>@[\\\\]^_\`{|}~@host/" 1`] = `
+Object {
+  "authority": " !\\"$%&'()*+,-.;<=>@[\\\\]",
+  "host": "[\\\\]",
+  "hostname": "[\\\\]",
+  "href": "foo:// !\\"$%&'()*+,-.;<=>@[\\\\]^_\`{|}~@host/",
+  "path": "^_\`{|}~@host/",
+  "scheme": "foo",
+  "userinfo": " !\\"$%&'()*+,-.;<=>",
+  "username": " !\\"$%&'()*+,-.;<=>",
+}
+`;
+
+exports[`input: "foo://!\\"$%&'()*+,-.;=_\`{}~/" 1`] = `
+Object {
+  "authority": "!\\"$%&'()*+,-.;=_\`{}~",
+  "host": "!\\"$%&'()*+,-.;=_\`{}~",
+  "hostname": "!\\"$%&'()*+,-.;=_\`{}~",
+  "href": "foo://!\\"$%&'()*+,-.;=_\`{}~/",
+  "path": "/",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo://" 1`] = `
+Object {
+  "authority": "",
+  "href": "foo://",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo://///////" 1`] = `
+Object {
+  "authority": "",
+  "href": "foo://///////",
+  "path": "///////",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo://///////bar.com/" 1`] = `
+Object {
+  "authority": "",
+  "href": "foo://///////bar.com/",
+  "path": "///////bar.com/",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo:////://///" 1`] = `
+Object {
+  "authority": "",
+  "href": "foo:////://///",
+  "path": "//://///",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo://host/ !\\"$%&'()*+,-./:;<=>@[\\\\]^_\`{|}~" 1`] = `
+Object {
+  "authority": "host",
+  "host": "host",
+  "hostname": "host",
+  "href": "foo://host/ !\\"$%&'()*+,-./:;<=>@[\\\\]^_\`{|}~",
+  "path": "/ !\\"$%&'()*+,-./:;<=>@[\\\\]^_\`{|}~",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo://host/dir/# !\\"#$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~" 1`] = `
+Object {
+  "authority": "host",
+  "fragment": " !\\"#$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "host": "host",
+  "hostname": "host",
+  "href": "foo://host/dir/# !\\"#$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "path": "/dir/",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo://host/dir/? !\\"$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~" 1`] = `
+Object {
+  "authority": "host",
+  "host": "host",
+  "hostname": "host",
+  "href": "foo://host/dir/? !\\"$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "path": "/dir/",
+  "query": " !\\"$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "foo://joe: !\\"$%&'()*+,-.:;<=>@[\\\\]^_\`{|}~@host/" 1`] = `
+Object {
+  "authority": "joe: !\\"$%&'()*+,-.:;<=>@[\\\\]",
+  "host": "[\\\\]",
+  "hostname": "[\\\\]",
+  "href": "foo://joe: !\\"$%&'()*+,-.:;<=>@[\\\\]^_\`{|}~@host/",
+  "password": " !\\"$%&'()*+,-.:;<=>",
+  "path": "^_\`{|}~@host/",
+  "scheme": "foo",
+  "userinfo": "joe: !\\"$%&'()*+,-.:;<=>",
+  "username": "joe",
+}
+`;
+
+exports[`input: "foo:/bar.com/" 1`] = `
+Object {
+  "href": "foo:/bar.com/",
+  "path": "/bar.com/",
+  "scheme": "foo",
+}
+`;
+
+exports[`input: "ftp://%e2%98%83" 1`] = `
+Object {
+  "authority": "%e2%98%83",
+  "host": "%e2%98%83",
+  "hostname": "%e2%98%83",
+  "href": "ftp://%e2%98%83",
+  "scheme": "ftp",
+}
+`;
+
+exports[`input: "ftp://example.com%80/" 1`] = `
+Object {
+  "authority": "example.com%80",
+  "host": "example.com%80",
+  "hostname": "example.com%80",
+  "href": "ftp://example.com%80/",
+  "path": "/",
+  "scheme": "ftp",
+}
+`;
+
+exports[`input: "ftp://example.com%A0/" 1`] = `
+Object {
+  "authority": "example.com%A0",
+  "host": "example.com%A0",
+  "hostname": "example.com%A0",
+  "href": "ftp://example.com%A0/",
+  "path": "/",
+  "scheme": "ftp",
+}
+`;
+
+exports[`input: "ftp://foo:21/" 1`] = `
+Object {
+  "authority": "foo:21",
+  "host": "foo:21",
+  "hostname": "foo",
+  "href": "ftp://foo:21/",
+  "path": "/",
+  "port": "21",
+  "scheme": "ftp",
+}
+`;
+
+exports[`input: "ftp://foo:80/" 1`] = `
+Object {
+  "authority": "foo:80",
+  "host": "foo:80",
+  "hostname": "foo",
+  "href": "ftp://foo:80/",
+  "path": "/",
+  "port": "80",
+  "scheme": "ftp",
+}
+`;
+
+exports[`input: "ftp:/example.com/" 1`] = `
+Object {
+  "href": "ftp:/example.com/",
+  "path": "/example.com/",
+  "scheme": "ftp",
+}
+`;
+
+exports[`input: "ftp:example.com/" 1`] = `
+Object {
+  "href": "ftp:example.com/",
+  "path": "example.com/",
+  "scheme": "ftp",
+}
+`;
+
+exports[`input: "ftps:/example.com/" 1`] = `
+Object {
+  "href": "ftps:/example.com/",
+  "path": "/example.com/",
+  "scheme": "ftps",
+}
+`;
+
+exports[`input: "ftps:example.com/" 1`] = `
+Object {
+  "href": "ftps:example.com/",
+  "path": "example.com/",
+  "scheme": "ftps",
+}
+`;
+
+exports[`input: "git+https://github.com/foo/bar" 1`] = `
+Object {
+  "authority": "github.com",
+  "host": "github.com",
+  "hostname": "github.com",
+  "href": "git+https://github.com/foo/bar",
+  "path": "/foo/bar",
+  "scheme": "git+https",
+}
+`;
+
+exports[`input: "git://github.com/foo/bar.git" 1`] = `
+Object {
+  "authority": "github.com",
+  "host": "github.com",
+  "hostname": "github.com",
+  "href": "git://github.com/foo/bar.git",
+  "path": "/foo/bar.git",
+  "scheme": "git",
+}
+`;
+
+exports[`input: "gopher://foo:70/" 1`] = `
+Object {
+  "authority": "foo:70",
+  "host": "foo:70",
+  "hostname": "foo",
+  "href": "gopher://foo:70/",
+  "path": "/",
+  "port": "70",
+  "scheme": "gopher",
+}
+`;
+
+exports[`input: "gopher://foo:443/" 1`] = `
+Object {
+  "authority": "foo:443",
+  "host": "foo:443",
+  "hostname": "foo",
+  "href": "gopher://foo:443/",
+  "path": "/",
+  "port": "443",
+  "scheme": "gopher",
+}
+`;
+
+exports[`input: "gopher:/example.com/" 1`] = `
+Object {
+  "href": "gopher:/example.com/",
+  "path": "/example.com/",
+  "scheme": "gopher",
+}
+`;
+
+exports[`input: "gopher:example.com/" 1`] = `
+Object {
+  "href": "gopher:example.com/",
+  "path": "example.com/",
+  "scheme": "gopher",
+}
+`;
+
+exports[`input: "h\\tt\\nt\\rp://h\\to\\ns\\rt:9\\t0\\n0\\r0/p\\ta\\nt\\rh?q\\tu\\ne\\rry#f\\tr\\na\\rg" 1`] = `null`;
+
+exports[`input: "http:" 1`] = `
+Object {
+  "href": "http:",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://#" 1`] = `
+Object {
+  "authority": "#",
+  "host": "#",
+  "hostname": "#",
+  "href": "http://#",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%3g%78%63%30%2e%30%32%35%30%2E.01" 1`] = `
+Object {
+  "authority": "%3g%78%63%30%2e%30%32%35%30%2E.01",
+  "host": "%3g%78%63%30%2e%30%32%35%30%2E.01",
+  "hostname": "%3g%78%63%30%2e%30%32%35%30%2E.01",
+  "href": "http://%3g%78%63%30%2e%30%32%35%30%2E.01",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%25" 1`] = `
+Object {
+  "authority": "%25",
+  "host": "%25",
+  "hostname": "%25",
+  "href": "http://%25",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%25DOMAIN:foobar@foodomain.com/" 1`] = `
+Object {
+  "authority": "%25DOMAIN:foobar@foodomain.com",
+  "host": "foodomain.com",
+  "hostname": "foodomain.com",
+  "href": "http://%25DOMAIN:foobar@foodomain.com/",
+  "password": "foobar",
+  "path": "/",
+  "scheme": "http",
+  "userinfo": "%25DOMAIN:foobar",
+  "username": "%25DOMAIN",
+}
+`;
+
+exports[`input: "http://%30%78%63%30%2e%30%32%35%30.01" 1`] = `
+Object {
+  "authority": "%30%78%63%30%2e%30%32%35%30.01",
+  "host": "%30%78%63%30%2e%30%32%35%30.01",
+  "hostname": "%30%78%63%30%2e%30%32%35%30.01",
+  "href": "http://%30%78%63%30%2e%30%32%35%30.01",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%30%78%63%30%2e%30%32%35%30.01%2e" 1`] = `
+Object {
+  "authority": "%30%78%63%30%2e%30%32%35%30.01%2e",
+  "host": "%30%78%63%30%2e%30%32%35%30.01%2e",
+  "hostname": "%30%78%63%30%2e%30%32%35%30.01%2e",
+  "href": "http://%30%78%63%30%2e%30%32%35%30.01%2e",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%ef%b7%90zyx.com" 1`] = `
+Object {
+  "authority": "%ef%b7%90zyx.com",
+  "host": "%ef%b7%90zyx.com",
+  "hostname": "%ef%b7%90zyx.com",
+  "href": "http://%ef%b7%90zyx.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%ef%bc%85%ef%bc%90%ef%bc%90.com" 1`] = `
+Object {
+  "authority": "%ef%bc%85%ef%bc%90%ef%bc%90.com",
+  "host": "%ef%bc%85%ef%bc%90%ef%bc%90.com",
+  "hostname": "%ef%bc%85%ef%bc%90%ef%bc%90.com",
+  "href": "http://%ef%bc%85%ef%bc%90%ef%bc%90.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%ef%bc%85%ef%bc%94%ef%bc%91.com" 1`] = `
+Object {
+  "authority": "%ef%bc%85%ef%bc%94%ef%bc%91.com",
+  "host": "%ef%bc%85%ef%bc%94%ef%bc%91.com",
+  "hostname": "%ef%bc%85%ef%bc%94%ef%bc%91.com",
+  "href": "http://%ef%bc%85%ef%bc%94%ef%bc%91.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://%zz%66%a.com" 1`] = `
+Object {
+  "authority": "%zz%66%a.com",
+  "host": "%zz%66%a.com",
+  "hostname": "%zz%66%a.com",
+  "href": "http://%zz%66%a.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://&a:foo(b]c@d:2/" 1`] = `
+Object {
+  "authority": "&a:foo(b]c@d:2",
+  "host": "d:2",
+  "hostname": "d",
+  "href": "http://&a:foo(b]c@d:2/",
+  "password": "foo(b]c",
+  "path": "/",
+  "port": "2",
+  "scheme": "http",
+  "userinfo": "&a:foo(b]c",
+  "username": "&a",
+}
+`;
+
+exports[`input: "http://../" 1`] = `
+Object {
+  "authority": "..",
+  "host": "..",
+  "hostname": "..",
+  "href": "http://../",
+  "path": "/",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://./" 1`] = `
+Object {
+  "authority": ".",
+  "host": ".",
+  "hostname": ".",
+  "href": "http://./",
+  "path": "/",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://::@c@d:2" 1`] = `
+Object {
+  "authority": "::@c@d:2",
+  "host": "d:2",
+  "hostname": "d",
+  "href": "http://::@c@d:2",
+  "password": ":@c",
+  "port": "2",
+  "scheme": "http",
+  "userinfo": "::@c",
+  "username": "",
+}
+`;
+
+exports[`input: "http://:@www.example.com" 1`] = `
+Object {
+  "authority": ":@www.example.com",
+  "host": "www.example.com",
+  "hostname": "www.example.com",
+  "href": "http://:@www.example.com",
+  "password": "",
+  "scheme": "http",
+  "userinfo": ":",
+  "username": "",
+}
+`;
+
+exports[`input: "http://:b@www.example.com" 1`] = `
+Object {
+  "authority": ":b@www.example.com",
+  "host": "www.example.com",
+  "hostname": "www.example.com",
+  "href": "http://:b@www.example.com",
+  "password": "b",
+  "scheme": "http",
+  "userinfo": ":b",
+  "username": "",
+}
+`;
+
+exports[`input: "http://?" 1`] = `
+Object {
+  "authority": "?",
+  "host": "?",
+  "hostname": "?",
+  "href": "http://?",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://@/www.example.com" 1`] = `
+Object {
+  "authority": "@",
+  "href": "http://@/www.example.com",
+  "path": "/www.example.com",
+  "scheme": "http",
+  "userinfo": "",
+}
+`;
+
+exports[`input: "http://@:www.example.com" 1`] = `
+Object {
+  "authority": "@:www.example.com",
+  "host": ":www.example.com",
+  "href": "http://@:www.example.com",
+  "port": "www.example.com",
+  "scheme": "http",
+  "userinfo": "",
+}
+`;
+
+exports[`input: "http://@pple.com" 1`] = `
+Object {
+  "authority": "@pple.com",
+  "host": "pple.com",
+  "hostname": "pple.com",
+  "href": "http://@pple.com",
+  "scheme": "http",
+  "userinfo": "",
+}
+`;
+
+exports[`input: "http://@www.example.com" 1`] = `
+Object {
+  "authority": "@www.example.com",
+  "host": "www.example.com",
+  "hostname": "www.example.com",
+  "href": "http://@www.example.com",
+  "scheme": "http",
+  "userinfo": "",
+}
+`;
+
+exports[`input: "http://[::1.]" 1`] = `
+Object {
+  "authority": "[::1.]",
+  "host": "[::1.]",
+  "hostname": "[::1.]",
+  "href": "http://[::1.]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[::1.2.]" 1`] = `
+Object {
+  "authority": "[::1.2.]",
+  "host": "[::1.2.]",
+  "hostname": "[::1.2.]",
+  "href": "http://[::1.2.]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[::1.2.3.]" 1`] = `
+Object {
+  "authority": "[::1.2.3.]",
+  "host": "[::1.2.3.]",
+  "hostname": "[::1.2.3.]",
+  "href": "http://[::1.2.3.]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[::1.2.3.4x]" 1`] = `
+Object {
+  "authority": "[::1.2.3.4x]",
+  "host": "[::1.2.3.4x]",
+  "hostname": "[::1.2.3.4x]",
+  "href": "http://[::1.2.3.4x]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[::127.0.0.0.1]" 1`] = `
+Object {
+  "authority": "[::127.0.0.0.1]",
+  "host": "[::127.0.0.0.1]",
+  "hostname": "[::127.0.0.0.1]",
+  "href": "http://[::127.0.0.0.1]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[::127.0.0.1]" 1`] = `
+Object {
+  "authority": "[::127.0.0.1]",
+  "host": "[::127.0.0.1]",
+  "hostname": "[::127.0.0.1]",
+  "href": "http://[::127.0.0.1]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[:]" 1`] = `
+Object {
+  "authority": "[:]",
+  "host": "[:]",
+  "hostname": "[:]",
+  "href": "http://[:]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[]" 1`] = `
+Object {
+  "authority": "[]",
+  "host": "[]",
+  "hostname": "[]",
+  "href": "http://[]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[0:0:0:0:0:0:13.1.68.3]" 1`] = `
+Object {
+  "authority": "[0:0:0:0:0:0:13.1.68.3]",
+  "host": "[0:0:0:0:0:0:13.1.68.3]",
+  "hostname": "[0:0:0:0:0:0:13.1.68.3]",
+  "href": "http://[0:0:0:0:0:0:13.1.68.3]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[0:1:0:1:0:1:0:1]" 1`] = `
+Object {
+  "authority": "[0:1:0:1:0:1:0:1]",
+  "host": "[0:1:0:1:0:1:0:1]",
+  "hostname": "[0:1:0:1:0:1:0:1]",
+  "href": "http://[0:1:0:1:0:1:0:1]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[0:1:2:3:4:5:6:7:8]" 1`] = `
+Object {
+  "authority": "[0:1:2:3:4:5:6:7:8]",
+  "host": "[0:1:2:3:4:5:6:7:8]",
+  "hostname": "[0:1:2:3:4:5:6:7:8]",
+  "href": "http://[0:1:2:3:4:5:6:7:8]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[1::2]:3:4" 1`] = `
+Object {
+  "authority": "[1::2]:3:4",
+  "host": "[1::2]:3:4",
+  "hostname": "[1::2]",
+  "href": "http://[1::2]:3:4",
+  "port": "3:4",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[1:0::]" 1`] = `
+Object {
+  "authority": "[1:0::]",
+  "host": "[1:0::]",
+  "hostname": "[1:0::]",
+  "href": "http://[1:0::]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[1:0:1:0:1:0:1:0]" 1`] = `
+Object {
+  "authority": "[1:0:1:0:1:0:1:0]",
+  "host": "[1:0:1:0:1:0:1:0]",
+  "hostname": "[1:0:1:0:1:0:1:0]",
+  "href": "http://[1:0:1:0:1:0:1:0]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[2001::1]" 1`] = `
+Object {
+  "authority": "[2001::1]",
+  "host": "[2001::1]",
+  "hostname": "[2001::1]",
+  "href": "http://[2001::1]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[2001::1]:80" 1`] = `
+Object {
+  "authority": "[2001::1]:80",
+  "host": "[2001::1]:80",
+  "hostname": "[2001::1]",
+  "href": "http://[2001::1]:80",
+  "port": "80",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[google.com]" 1`] = `
+Object {
+  "authority": "[google.com]",
+  "host": "[google.com]",
+  "hostname": "[google.com]",
+  "href": "http://[google.com]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://[www.google.com]/" 1`] = `
+Object {
+  "authority": "[www.google.com]",
+  "host": "[www.google.com]",
+  "hostname": "[www.google.com]",
+  "href": "http://[www.google.com]/",
+  "path": "/",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://\\u001f!\\"$&'()*+,-.;=_\`{}~/" 1`] = `
+Object {
+  "authority": "!\\"$&'()*+,-.;=_\`{}~",
+  "host": "!\\"$&'()*+,-.;=_\`{}~",
+  "hostname": "!\\"$&'()*+,-.;=_\`{}~",
+  "href": "http://!\\"$&'()*+,-.;=_\`{}~/",
+  "path": "/",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://\`{}:\`{}@h/\`{}?\`{}" 1`] = `
+Object {
+  "authority": "\`{}:\`{}@h",
+  "host": "h",
+  "hostname": "h",
+  "href": "http://\`{}:\`{}@h/\`{}?\`{}",
+  "password": "\`{}",
+  "path": "/\`{}",
+  "query": "\`{}",
+  "scheme": "http",
+  "userinfo": "\`{}:\`{}",
+  "username": "\`{}",
+}
+`;
+
+exports[`input: "http://0..0x300/" 1`] = `
+Object {
+  "authority": "0..0x300",
+  "host": "0..0x300",
+  "hostname": "0..0x300",
+  "href": "http://0..0x300/",
+  "path": "/",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://0177.0.0.0189" 1`] = `
+Object {
+  "authority": "0177.0.0.0189",
+  "host": "0177.0.0.0189",
+  "hostname": "0177.0.0.0189",
+  "href": "http://0177.0.0.0189",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://0X7F.0.0.0X7G" 1`] = `
+Object {
+  "authority": "0X7F.0.0.0X7G",
+  "host": "0X7F.0.0.0X7G",
+  "hostname": "0X7F.0.0.0X7G",
+  "href": "http://0X7F.0.0.0X7G",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://0x7f.0.0.0x7g" 1`] = `
+Object {
+  "authority": "0x7f.0.0.0x7g",
+  "host": "0x7f.0.0.0x7g",
+  "hostname": "0x7f.0.0.0x7g",
+  "href": "http://0x7f.0.0.0x7g",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://0xffffffff" 1`] = `
+Object {
+  "authority": "0xffffffff",
+  "host": "0xffffffff",
+  "hostname": "0xffffffff",
+  "href": "http://0xffffffff",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://0xffffffff1" 1`] = `
+Object {
+  "authority": "0xffffffff1",
+  "host": "0xffffffff1",
+  "hostname": "0xffffffff1",
+  "href": "http://0xffffffff1",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://127.0.0.1:10100/relative_import.html" 1`] = `
+Object {
+  "authority": "127.0.0.1:10100",
+  "host": "127.0.0.1:10100",
+  "hostname": "127.0.0.1",
+  "href": "http://127.0.0.1:10100/relative_import.html",
+  "path": "/relative_import.html",
+  "port": "10100",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://192.0x00A80001" 1`] = `
+Object {
+  "authority": "192.0x00A80001",
+  "host": "192.0x00A80001",
+  "hostname": "192.0x00A80001",
+  "href": "http://192.0x00A80001",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://192.168.0.1 hello" 1`] = `
+Object {
+  "authority": "192.168.0.1 hello",
+  "host": "192.168.0.1 hello",
+  "hostname": "192.168.0.1 hello",
+  "href": "http://192.168.0.1 hello",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://192.168.0.257" 1`] = `
+Object {
+  "authority": "192.168.0.257",
+  "host": "192.168.0.257",
+  "hostname": "192.168.0.257",
+  "href": "http://192.168.0.257",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://192.168.257" 1`] = `
+Object {
+  "authority": "192.168.257",
+  "host": "192.168.257",
+  "hostname": "192.168.257",
+  "href": "http://192.168.257",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://192.168.257.com" 1`] = `
+Object {
+  "authority": "192.168.257.com",
+  "host": "192.168.257.com",
+  "hostname": "192.168.257.com",
+  "href": "http://192.168.257.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://256" 1`] = `
+Object {
+  "authority": "256",
+  "host": "256",
+  "hostname": "256",
+  "href": "http://256",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://256.256.256.256" 1`] = `
+Object {
+  "authority": "256.256.256.256",
+  "host": "256.256.256.256",
+  "hostname": "256.256.256.256",
+  "href": "http://256.256.256.256",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://256.256.256.256.256" 1`] = `
+Object {
+  "authority": "256.256.256.256.256",
+  "host": "256.256.256.256.256",
+  "hostname": "256.256.256.256.256",
+  "href": "http://256.256.256.256.256",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://256.com" 1`] = `
+Object {
+  "authority": "256.com",
+  "host": "256.com",
+  "hostname": "256.com",
+  "href": "http://256.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://2001::1" 1`] = `
+Object {
+  "authority": "2001::1",
+  "host": "2001::1",
+  "hostname": "2001",
+  "href": "http://2001::1",
+  "port": ":1",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://2001::1]" 1`] = `
+Object {
+  "authority": "2001::1]",
+  "host": "2001::1]",
+  "hostname": "2001",
+  "href": "http://2001::1]",
+  "port": ":1]",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://2001::1]:80" 1`] = `
+Object {
+  "authority": "2001::1]:80",
+  "host": "2001::1]:80",
+  "hostname": "2001",
+  "href": "http://2001::1]:80",
+  "port": ":1]:80",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://999999999" 1`] = `
+Object {
+  "authority": "999999999",
+  "host": "999999999",
+  "hostname": "999999999",
+  "href": "http://999999999",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://999999999.com" 1`] = `
+Object {
+  "authority": "999999999.com",
+  "host": "999999999.com",
+  "hostname": "999999999.com",
+  "href": "http://999999999.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://4294967295" 1`] = `
+Object {
+  "authority": "4294967295",
+  "host": "4294967295",
+  "hostname": "4294967295",
+  "href": "http://4294967295",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://4294967296" 1`] = `
+Object {
+  "authority": "4294967296",
+  "host": "4294967296",
+  "hostname": "4294967296",
+  "href": "http://4294967296",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://10000000000" 1`] = `
+Object {
+  "authority": "10000000000",
+  "host": "10000000000",
+  "hostname": "10000000000",
+  "href": "http://10000000000",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://10000000000.com" 1`] = `
+Object {
+  "authority": "10000000000.com",
+  "host": "10000000000.com",
+  "hostname": "10000000000.com",
+  "href": "http://10000000000.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://ExAmPlE.CoM" 1`] = `
+Object {
+  "authority": "ExAmPlE.CoM",
+  "host": "ExAmPlE.CoM",
+  "hostname": "ExAmPlE.CoM",
+  "href": "http://ExAmPlE.CoM",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://GOO 　goo.com" 1`] = `
+Object {
+  "authority": "GOO 　goo.com",
+  "host": "GOO 　goo.com",
+  "hostname": "GOO 　goo.com",
+  "href": "http://GOO 　goo.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://GOO​⁠﻿goo.com" 1`] = `
+Object {
+  "authority": "GOO​⁠﻿goo.com",
+  "host": "GOO​⁠﻿goo.com",
+  "hostname": "GOO​⁠﻿goo.com",
+  "href": "http://GOO​⁠﻿goo.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://Goo%20 goo%7C|.com" 1`] = `
+Object {
+  "authority": "Goo%20 goo%7C|.com",
+  "host": "Goo%20 goo%7C|.com",
+  "hostname": "Goo%20 goo%7C|.com",
+  "href": "http://Goo%20 goo%7C|.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://a:@www.example.com" 1`] = `
+Object {
+  "authority": "a:@www.example.com",
+  "host": "www.example.com",
+  "hostname": "www.example.com",
+  "href": "http://a:@www.example.com",
+  "password": "",
+  "scheme": "http",
+  "userinfo": "a:",
+  "username": "a",
+}
+`;
+
+exports[`input: "http://a:b@/www.example.com" 1`] = `
+Object {
+  "authority": "a:b@",
+  "href": "http://a:b@/www.example.com",
+  "password": "b",
+  "path": "/www.example.com",
+  "scheme": "http",
+  "userinfo": "a:b",
+  "username": "a",
+}
+`;
+
+exports[`input: "http://a:b@c:29/d" 1`] = `
+Object {
+  "authority": "a:b@c:29",
+  "host": "c:29",
+  "hostname": "c",
+  "href": "http://a:b@c:29/d",
+  "password": "b",
+  "path": "/d",
+  "port": "29",
+  "scheme": "http",
+  "userinfo": "a:b",
+  "username": "a",
+}
+`;
+
+exports[`input: "http://a:b@www.example.com" 1`] = `
+Object {
+  "authority": "a:b@www.example.com",
+  "host": "www.example.com",
+  "hostname": "www.example.com",
+  "href": "http://a:b@www.example.com",
+  "password": "b",
+  "scheme": "http",
+  "userinfo": "a:b",
+  "username": "a",
+}
+`;
+
+exports[`input: "http://a<b" 1`] = `
+Object {
+  "authority": "a<b",
+  "host": "a<b",
+  "hostname": "a<b",
+  "href": "http://a<b",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://a>b" 1`] = `
+Object {
+  "authority": "a>b",
+  "host": "a>b",
+  "hostname": "a>b",
+  "href": "http://a>b",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://a^b" 1`] = `
+Object {
+  "authority": "a^b",
+  "host": "a^b",
+  "hostname": "a^b",
+  "href": "http://a^b",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example example.com" 1`] = `
+Object {
+  "authority": "example example.com",
+  "host": "example example.com",
+  "hostname": "example example.com",
+  "href": "http://example example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/%3A%3a%3C%3c" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/%3A%3a%3C%3c",
+  "path": "/%3A%3a%3C%3c",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/%7Ffp3%3Eju%3Dduvgw%3Dd" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/%7Ffp3%3Eju%3Dduvgw%3Dd",
+  "path": "/%7Ffp3%3Eju%3Dduvgw%3Dd",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/%20foo" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/%20foo",
+  "path": "/%20foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/(%28:%3A%29)" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/(%28:%3A%29)",
+  "path": "/(%28:%3A%29)",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/././foo" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/././foo",
+  "path": "/././foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/./.foo" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/./.foo",
+  "path": "/./.foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com////../.." 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com////../..",
+  "path": "////../..",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/@asdf%40" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/@asdf%40",
+  "path": "/@asdf%40",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo",
+  "path": "/foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo%" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo%",
+  "path": "/foo%",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo%00%51" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo%00%51",
+  "path": "/foo%00%51",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo%2" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo%2",
+  "path": "/foo%2",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo%2zbar" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo%2zbar",
+  "path": "/foo%2zbar",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo%2Â©zbar" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo%2Â©zbar",
+  "path": "/foo%2Â©zbar",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo%41%7a" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo%41%7a",
+  "path": "/foo%41%7a",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/%2e" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/%2e",
+  "path": "/foo/%2e",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/%2e%2" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/%2e%2",
+  "path": "/foo/%2e%2",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/%2e./%2e%2e/.%2e/%2e.bar" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/%2e./%2e%2e/.%2e/%2e.bar",
+  "path": "/foo/%2e./%2e%2e/.%2e/%2e.bar",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/." 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/.",
+  "path": "/foo/.",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/../../.." 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/../../..",
+  "path": "/foo/../../..",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/../../../ton" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/../../../ton",
+  "path": "/foo/../../../ton",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/..bar" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/..bar",
+  "path": "/foo/..bar",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/./" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/./",
+  "path": "/foo/./",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/bar/.." 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/bar/..",
+  "path": "/foo/bar/..",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/bar/../" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/bar/../",
+  "path": "/foo/bar/../",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/bar/../ton" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/bar/../ton",
+  "path": "/foo/bar/../ton",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/bar/../ton/../../a" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/bar/../ton/../../a",
+  "path": "/foo/bar/../ton/../../a",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/bar//.." 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/bar//..",
+  "path": "/foo/bar//..",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo/bar//../.." 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo/bar//../..",
+  "path": "/foo/bar//../..",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo\\tbar" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo	bar",
+  "path": "/foo	bar",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/foo\\t%91" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/foo	%91",
+  "path": "/foo	%91",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/‥/foo" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/‥/foo",
+  "path": "/‥/foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/‮/foo/‭/bar" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/‮/foo/‭/bar",
+  "path": "/‮/foo/‭/bar",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/你好你好" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/你好你好",
+  "path": "/你好你好",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com/﻿/foo" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com/﻿/foo",
+  "path": "/﻿/foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.com\\\\\\\\foo\\\\\\\\bar" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://example.com\\\\\\\\foo\\\\\\\\bar",
+  "path": "\\\\\\\\foo\\\\\\\\bar",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?#" 1`] = `
+Object {
+  "authority": "example.org",
+  "fragment": "",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?#",
+  "path": "/test",
+  "query": "",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?%23%23" 1`] = `
+Object {
+  "authority": "example.org",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?%23%23",
+  "path": "/test",
+  "query": "%23%23",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?%GH" 1`] = `
+Object {
+  "authority": "example.org",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?%GH",
+  "path": "/test",
+  "query": "%GH",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?<" 1`] = `
+Object {
+  "authority": "example.org",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?<",
+  "path": "/test",
+  "query": "<",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?>" 1`] = `
+Object {
+  "authority": "example.org",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?>",
+  "path": "/test",
+  "query": ">",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?\\"" 1`] = `
+Object {
+  "authority": "example.org",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?\\"",
+  "path": "/test",
+  "query": "\\"",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?a#%EF" 1`] = `
+Object {
+  "authority": "example.org",
+  "fragment": "%EF",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?a#%EF",
+  "path": "/test",
+  "query": "a",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?a#%GH" 1`] = `
+Object {
+  "authority": "example.org",
+  "fragment": "%GH",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?a#%GH",
+  "path": "/test",
+  "query": "a",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?a#b\\u0000c" 1`] = `
+Object {
+  "authority": "example.org",
+  "fragment": "b c",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?a#b c",
+  "path": "/test",
+  "query": "a",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example.org/test?⌣" 1`] = `
+Object {
+  "authority": "example.org",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "http://example.org/test?⌣",
+  "path": "/test",
+  "query": "⌣",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://example\\t.\\norg" 1`] = `
+Object {
+  "authority": "example	.
+org",
+  "host": "example	.
+org",
+  "hostname": "example	.
+org",
+  "href": "http://example	.
+org",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f: /c" 1`] = `
+Object {
+  "authority": "f: ",
+  "host": "f: ",
+  "hostname": "f",
+  "href": "http://f: /c",
+  "path": "/c",
+  "port": " ",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f: 21 / b ? d # e " 1`] = `
+Object {
+  "authority": "f: 21 ",
+  "fragment": " e ",
+  "host": "f: 21 ",
+  "hostname": "f",
+  "href": "http://f: 21 / b ? d # e ",
+  "path": "/ b ",
+  "port": " 21 ",
+  "query": " d ",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:/c" 1`] = `
+Object {
+  "authority": "f:",
+  "host": "f:",
+  "hostname": "f",
+  "href": "http://f:/c",
+  "path": "/c",
+  "port": "",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:\\n/c" 1`] = `
+Object {
+  "authority": "f:
+",
+  "host": "f:
+",
+  "hostname": "f",
+  "href": "http://f:
+/c",
+  "path": "/c",
+  "port": "
+",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:0/c" 1`] = `
+Object {
+  "authority": "f:0",
+  "host": "f:0",
+  "hostname": "f",
+  "href": "http://f:0/c",
+  "path": "/c",
+  "port": "0",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:00000000000000/c" 1`] = `
+Object {
+  "authority": "f:00000000000000",
+  "host": "f:00000000000000",
+  "hostname": "f",
+  "href": "http://f:00000000000000/c",
+  "path": "/c",
+  "port": "00000000000000",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:00000000000000000000080/c" 1`] = `
+Object {
+  "authority": "f:00000000000000000000080",
+  "host": "f:00000000000000000000080",
+  "hostname": "f",
+  "href": "http://f:00000000000000000000080/c",
+  "path": "/c",
+  "port": "00000000000000000000080",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:21/ b ? d # e " 1`] = `
+Object {
+  "authority": "f:21",
+  "fragment": " e ",
+  "host": "f:21",
+  "hostname": "f",
+  "href": "http://f:21/ b ? d # e ",
+  "path": "/ b ",
+  "port": "21",
+  "query": " d ",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:999999/c" 1`] = `
+Object {
+  "authority": "f:999999",
+  "host": "f:999999",
+  "hostname": "f",
+  "href": "http://f:999999/c",
+  "path": "/c",
+  "port": "999999",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:4294967377/c" 1`] = `
+Object {
+  "authority": "f:4294967377",
+  "host": "f:4294967377",
+  "hostname": "f",
+  "href": "http://f:4294967377/c",
+  "path": "/c",
+  "port": "4294967377",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:18446744073709551697/c" 1`] = `
+Object {
+  "authority": "f:18446744073709551697",
+  "host": "f:18446744073709551697",
+  "hostname": "f",
+  "href": "http://f:18446744073709551697/c",
+  "path": "/c",
+  "port": "18446744073709551697",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:340282366920938463463374607431768211537/c" 1`] = `
+Object {
+  "authority": "f:340282366920938463463374607431768211537",
+  "host": "f:340282366920938463463374607431768211537",
+  "hostname": "f",
+  "href": "http://f:340282366920938463463374607431768211537/c",
+  "path": "/c",
+  "port": "340282366920938463463374607431768211537",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:b/c" 1`] = `
+Object {
+  "authority": "f:b",
+  "host": "f:b",
+  "hostname": "f",
+  "href": "http://f:b/c",
+  "path": "/c",
+  "port": "b",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://f:fifty-two/c" 1`] = `
+Object {
+  "authority": "f:fifty-two",
+  "host": "f:fifty-two",
+  "hostname": "f",
+  "href": "http://f:fifty-two/c",
+  "path": "/c",
+  "port": "fifty-two",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://facebook.com/?foo=%7B%22abc%22" 1`] = `
+Object {
+  "authority": "facebook.com",
+  "host": "facebook.com",
+  "hostname": "facebook.com",
+  "href": "http://facebook.com/?foo=%7B%22abc%22",
+  "path": "/",
+  "query": "foo=%7B%22abc%22",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo.bar/baz?qux#foo<bar" 1`] = `
+Object {
+  "authority": "foo.bar",
+  "fragment": "foo<bar",
+  "host": "foo.bar",
+  "hostname": "foo.bar",
+  "href": "http://foo.bar/baz?qux#foo<bar",
+  "path": "/baz",
+  "query": "qux",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo.bar/baz?qux#foo>bar" 1`] = `
+Object {
+  "authority": "foo.bar",
+  "fragment": "foo>bar",
+  "host": "foo.bar",
+  "hostname": "foo.bar",
+  "href": "http://foo.bar/baz?qux#foo>bar",
+  "path": "/baz",
+  "query": "qux",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo.bar/baz?qux#foo\\"bar" 1`] = `
+Object {
+  "authority": "foo.bar",
+  "fragment": "foo\\"bar",
+  "host": "foo.bar",
+  "hostname": "foo.bar",
+  "href": "http://foo.bar/baz?qux#foo\\"bar",
+  "path": "/baz",
+  "query": "qux",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo.bar/baz?qux#foo\\bbar" 1`] = `
+Object {
+  "authority": "foo.bar",
+  "fragment": "foobar",
+  "host": "foo.bar",
+  "hostname": "foo.bar",
+  "href": "http://foo.bar/baz?qux#foobar",
+  "path": "/baz",
+  "query": "qux",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo.bar/baz?qux#foo\`bar" 1`] = `
+Object {
+  "authority": "foo.bar",
+  "fragment": "foo\`bar",
+  "host": "foo.bar",
+  "hostname": "foo.bar",
+  "href": "http://foo.bar/baz?qux#foo\`bar",
+  "path": "/baz",
+  "query": "qux",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo.com/\\\\@" 1`] = `
+Object {
+  "authority": "foo.com",
+  "host": "foo.com",
+  "hostname": "foo.com",
+  "href": "http://foo.com/\\\\@",
+  "path": "/\\\\@",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo.com:b@d/" 1`] = `
+Object {
+  "authority": "foo.com:b@d",
+  "host": "d",
+  "hostname": "d",
+  "href": "http://foo.com:b@d/",
+  "password": "b",
+  "path": "/",
+  "scheme": "http",
+  "userinfo": "foo.com:b",
+  "username": "foo.com",
+}
+`;
+
+exports[`input: "http://foo/abcd#foo?bar" 1`] = `
+Object {
+  "authority": "foo",
+  "fragment": "foo?bar",
+  "host": "foo",
+  "hostname": "foo",
+  "href": "http://foo/abcd#foo?bar",
+  "path": "/abcd",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo/abcd?efgh?ijkl" 1`] = `
+Object {
+  "authority": "foo",
+  "host": "foo",
+  "hostname": "foo",
+  "href": "http://foo/abcd?efgh?ijkl",
+  "path": "/abcd",
+  "query": "efgh?ijkl",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo/path;a??e#f#g" 1`] = `
+Object {
+  "authority": "foo",
+  "fragment": "f#g",
+  "host": "foo",
+  "hostname": "foo",
+  "href": "http://foo/path;a??e#f#g",
+  "path": "/path;a",
+  "query": "?e",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo:-80/" 1`] = `
+Object {
+  "authority": "foo:-80",
+  "host": "foo:-80",
+  "hostname": "foo",
+  "href": "http://foo:-80/",
+  "path": "/",
+  "port": "-80",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo:80/" 1`] = `
+Object {
+  "authority": "foo:80",
+  "host": "foo:80",
+  "hostname": "foo",
+  "href": "http://foo:80/",
+  "path": "/",
+  "port": "80",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo:81/" 1`] = `
+Object {
+  "authority": "foo:81",
+  "host": "foo:81",
+  "hostname": "foo",
+  "href": "http://foo:81/",
+  "path": "/",
+  "port": "81",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://foo:💩@example.com/bar" 1`] = `
+Object {
+  "authority": "foo:💩@example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "http://foo:💩@example.com/bar",
+  "password": "💩",
+  "path": "/bar",
+  "scheme": "http",
+  "userinfo": "foo:💩",
+  "username": "foo",
+}
+`;
+
+exports[`input: "http://hello%00" 1`] = `
+Object {
+  "authority": "hello%00",
+  "host": "hello%00",
+  "hostname": "hello%00",
+  "href": "http://hello%00",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://host/?'" 1`] = `
+Object {
+  "authority": "host",
+  "host": "host",
+  "hostname": "host",
+  "href": "http://host/?'",
+  "path": "/",
+  "query": "'",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://user:pass@/" 1`] = `
+Object {
+  "authority": "user:pass@",
+  "href": "http://user:pass@/",
+  "password": "pass",
+  "path": "/",
+  "scheme": "http",
+  "userinfo": "user:pass",
+  "username": "user",
+}
+`;
+
+exports[`input: "http://user:pass@foo:21/bar;par?b#c" 1`] = `
+Object {
+  "authority": "user:pass@foo:21",
+  "fragment": "c",
+  "host": "foo:21",
+  "hostname": "foo",
+  "href": "http://user:pass@foo:21/bar;par?b#c",
+  "password": "pass",
+  "path": "/bar;par",
+  "port": "21",
+  "query": "b",
+  "scheme": "http",
+  "userinfo": "user:pass",
+  "username": "user",
+}
+`;
+
+exports[`input: "http://user@/www.example.com" 1`] = `
+Object {
+  "authority": "user@",
+  "href": "http://user@/www.example.com",
+  "path": "/www.example.com",
+  "scheme": "http",
+  "userinfo": "user",
+  "username": "user",
+}
+`;
+
+exports[`input: "http://www.@pple.com" 1`] = `
+Object {
+  "authority": "www.@pple.com",
+  "host": "pple.com",
+  "hostname": "pple.com",
+  "href": "http://www.@pple.com",
+  "scheme": "http",
+  "userinfo": "www.",
+  "username": "www.",
+}
+`;
+
+exports[`input: "http://www.example2.com" 1`] = `
+Object {
+  "authority": "www.example2.com",
+  "host": "www.example2.com",
+  "hostname": "www.example2.com",
+  "href": "http://www.example2.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://www.foo。bar.com" 1`] = `
+Object {
+  "authority": "www.foo。bar.com",
+  "host": "www.foo。bar.com",
+  "hostname": "www.foo。bar.com",
+  "href": "http://www.foo。bar.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://www.google.com" 1`] = `
+Object {
+  "authority": "www.google.com",
+  "host": "www.google.com",
+  "hostname": "www.google.com",
+  "href": "http://www.google.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://www.google.com/foo?bar=baz# »" 1`] = `
+Object {
+  "authority": "www.google.com",
+  "fragment": " »",
+  "host": "www.google.com",
+  "hostname": "www.google.com",
+  "href": "http://www.google.com/foo?bar=baz# »",
+  "path": "/foo",
+  "query": "bar=baz",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://www.google.com/foo?bar=baz#" 1`] = `
+Object {
+  "authority": "www.google.com",
+  "fragment": "",
+  "host": "www.google.com",
+  "hostname": "www.google.com",
+  "href": "http://www.google.com/foo?bar=baz#",
+  "path": "/foo",
+  "query": "bar=baz",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://www/foo%2Ehtml" 1`] = `
+Object {
+  "authority": "www",
+  "host": "www",
+  "hostname": "www",
+  "href": "http://www/foo%2Ehtml",
+  "path": "/foo%2Ehtml",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://www/foo/%2E/html" 1`] = `
+Object {
+  "authority": "www",
+  "host": "www",
+  "hostname": "www",
+  "href": "http://www/foo/%2E/html",
+  "path": "/foo/%2E/html",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://你好你好" 1`] = `
+Object {
+  "authority": "你好你好",
+  "host": "你好你好",
+  "hostname": "你好你好",
+  "href": "http://你好你好",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://﷐zyx.com" 1`] = `
+Object {
+  "authority": "﷐zyx.com",
+  "host": "﷐zyx.com",
+  "hostname": "﷐zyx.com",
+  "href": "http://﷐zyx.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://％００.com" 1`] = `
+Object {
+  "authority": "％００.com",
+  "host": "％００.com",
+  "hostname": "％００.com",
+  "href": "http://％００.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://％４１.com" 1`] = `
+Object {
+  "authority": "％４１.com",
+  "host": "％４１.com",
+  "hostname": "％４１.com",
+  "href": "http://％４１.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://０Ｘｃ０．０２５０．０１" 1`] = `
+Object {
+  "authority": "０Ｘｃ０．０２５０．０１",
+  "host": "０Ｘｃ０．０２５０．０１",
+  "hostname": "０Ｘｃ０．０２５０．０１",
+  "href": "http://０Ｘｃ０．０２５０．０１",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http://Ｇｏ.com" 1`] = `
+Object {
+  "authority": "Ｇｏ.com",
+  "host": "Ｇｏ.com",
+  "hostname": "Ｇｏ.com",
+  "href": "http://Ｇｏ.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/:@/www.example.com" 1`] = `
+Object {
+  "href": "http:/:@/www.example.com",
+  "path": "/:@/www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/:b@www.example.com" 1`] = `
+Object {
+  "href": "http:/:b@www.example.com",
+  "path": "/:b@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/@/www.example.com" 1`] = `
+Object {
+  "href": "http:/@/www.example.com",
+  "path": "/@/www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/@:www.example.com" 1`] = `
+Object {
+  "href": "http:/@:www.example.com",
+  "path": "/@:www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/@www.example.com" 1`] = `
+Object {
+  "href": "http:/@www.example.com",
+  "path": "/@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/a:@www.example.com" 1`] = `
+Object {
+  "href": "http:/a:@www.example.com",
+  "path": "/a:@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/a:b@/www.example.com" 1`] = `
+Object {
+  "href": "http:/a:b@/www.example.com",
+  "path": "/a:b@/www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/a:b@www.example.com" 1`] = `
+Object {
+  "href": "http:/a:b@www.example.com",
+  "path": "/a:b@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:/example.com/" 1`] = `
+Object {
+  "href": "http:/example.com/",
+  "path": "/example.com/",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http::@/www.example.com" 1`] = `
+Object {
+  "href": "http::@/www.example.com",
+  "path": ":@/www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http::@c:29" 1`] = `
+Object {
+  "href": "http::@c:29",
+  "path": ":@c:29",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http::b@www.example.com" 1`] = `
+Object {
+  "href": "http::b@www.example.com",
+  "path": ":b@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:@/www.example.com" 1`] = `
+Object {
+  "href": "http:@/www.example.com",
+  "path": "@/www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:@:www.example.com" 1`] = `
+Object {
+  "href": "http:@:www.example.com",
+  "path": "@:www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:@www.example.com" 1`] = `
+Object {
+  "href": "http:@www.example.com",
+  "path": "@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:[61:27]/:foo" 1`] = `
+Object {
+  "href": "http:[61:27]/:foo",
+  "path": "[61:27]/:foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:\\\\\\\\a\\\\b:c\\\\d@foo.com\\\\" 1`] = `
+Object {
+  "authority": "a",
+  "host": "a",
+  "hostname": "a",
+  "href": "http:\\\\\\\\a\\\\b:c\\\\d@foo.com\\\\",
+  "path": "\\\\b:c\\\\d@foo.com\\\\",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:\\\\\\\\foo.com\\\\" 1`] = `
+Object {
+  "authority": "foo.com",
+  "host": "foo.com",
+  "hostname": "foo.com",
+  "href": "http:\\\\\\\\foo.com\\\\",
+  "path": "\\\\",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:\\\\\\\\www.google.com\\\\foo" 1`] = `
+Object {
+  "authority": "www.google.com",
+  "host": "www.google.com",
+  "hostname": "www.google.com",
+  "href": "http:\\\\\\\\www.google.com\\\\foo",
+  "path": "\\\\foo",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:a:@www.example.com" 1`] = `
+Object {
+  "href": "http:a:@www.example.com",
+  "path": "a:@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:a:b@/www.example.com" 1`] = `
+Object {
+  "href": "http:a:b@/www.example.com",
+  "path": "a:b@/www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:a:b@www.example.com" 1`] = `
+Object {
+  "href": "http:a:b@www.example.com",
+  "path": "a:b@www.example.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:example.com/" 1`] = `
+Object {
+  "href": "http:example.com/",
+  "path": "example.com/",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "http:foo.com" 1`] = `
+Object {
+  "href": "http:foo.com",
+  "path": "foo.com",
+  "scheme": "http",
+}
+`;
+
+exports[`input: "httpa://foo:80/" 1`] = `
+Object {
+  "authority": "foo:80",
+  "host": "foo:80",
+  "hostname": "foo",
+  "href": "httpa://foo:80/",
+  "path": "/",
+  "port": "80",
+  "scheme": "httpa",
+}
+`;
+
+exports[`input: "https://%43%7C/" 1`] = `
+Object {
+  "authority": "%43%7C",
+  "host": "%43%7C",
+  "hostname": "%43%7C",
+  "href": "https://%43%7C/",
+  "path": "/",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://%EF%BF%BD" 1`] = `
+Object {
+  "authority": "%EF%BF%BD",
+  "host": "%EF%BF%BD",
+  "hostname": "%EF%BF%BD",
+  "href": "https://%EF%BF%BD",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://%e2%98%83" 1`] = `
+Object {
+  "authority": "%e2%98%83",
+  "host": "%e2%98%83",
+  "hostname": "%e2%98%83",
+  "href": "https://%e2%98%83",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://:@test" 1`] = `
+Object {
+  "authority": ":@test",
+  "host": "test",
+  "hostname": "test",
+  "href": "https://:@test",
+  "password": "",
+  "scheme": "https",
+  "userinfo": ":",
+  "username": "",
+}
+`;
+
+exports[`input: "https://@@@example" 1`] = `
+Object {
+  "authority": "@@@example",
+  "host": "example",
+  "hostname": "example",
+  "href": "https://@@@example",
+  "scheme": "https",
+  "userinfo": "@@",
+  "username": "@@",
+}
+`;
+
+exports[`input: "https://@test@test@example:800/" 1`] = `
+Object {
+  "authority": "@test@test@example:800",
+  "host": "example:800",
+  "hostname": "example",
+  "href": "https://@test@test@example:800/",
+  "path": "/",
+  "port": "800",
+  "scheme": "https",
+  "userinfo": "@test@test",
+  "username": "@test@test",
+}
+`;
+
+exports[`input: "https://[0:.0]" 1`] = `
+Object {
+  "authority": "[0:.0]",
+  "host": "[0:.0]",
+  "hostname": "[0:.0]",
+  "href": "https://[0:.0]",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://[0::0::0]" 1`] = `
+Object {
+  "authority": "[0::0::0]",
+  "host": "[0::0::0]",
+  "hostname": "[0::0::0]",
+  "href": "https://[0::0::0]",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://[0:0:]" 1`] = `
+Object {
+  "authority": "[0:0:]",
+  "host": "[0:0:]",
+  "hostname": "[0:0:]",
+  "href": "https://[0:0:]",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://[0:1.00.0.0.0]" 1`] = `
+Object {
+  "authority": "[0:1.00.0.0.0]",
+  "host": "[0:1.00.0.0.0]",
+  "hostname": "[0:1.00.0.0.0]",
+  "href": "https://[0:1.00.0.0.0]",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://[0:1.23.23]" 1`] = `
+Object {
+  "authority": "[0:1.23.23]",
+  "host": "[0:1.23.23]",
+  "hostname": "[0:1.23.23]",
+  "href": "https://[0:1.23.23]",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://[0:1.290.0.0.0]" 1`] = `
+Object {
+  "authority": "[0:1.290.0.0.0]",
+  "host": "[0:1.290.0.0.0]",
+  "hostname": "[0:1.290.0.0.0]",
+  "href": "https://[0:1.290.0.0.0]",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://[0:1:2:3:4:5:6:7.0.0.0.1]" 1`] = `
+Object {
+  "authority": "[0:1:2:3:4:5:6:7.0.0.0.1]",
+  "host": "[0:1:2:3:4:5:6:7.0.0.0.1]",
+  "hostname": "[0:1:2:3:4:5:6:7.0.0.0.1]",
+  "href": "https://[0:1:2:3:4:5:6:7.0.0.0.1]",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://0x.0x.0" 1`] = `
+Object {
+  "authority": "0x.0x.0",
+  "host": "0x.0x.0",
+  "hostname": "0x.0x.0",
+  "href": "https://0x.0x.0",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://0x100000000/test" 1`] = `
+Object {
+  "authority": "0x100000000",
+  "host": "0x100000000",
+  "hostname": "0x100000000",
+  "href": "https://0x100000000/test",
+  "path": "/test",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://256.0.0.1/test" 1`] = `
+Object {
+  "authority": "256.0.0.1",
+  "host": "256.0.0.1",
+  "hostname": "256.0.0.1",
+  "href": "https://256.0.0.1/test",
+  "path": "/test",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://example.com%80/" 1`] = `
+Object {
+  "authority": "example.com%80",
+  "host": "example.com%80",
+  "hostname": "example.com%80",
+  "href": "https://example.com%80/",
+  "path": "/",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://example.com%A0/" 1`] = `
+Object {
+  "authority": "example.com%A0",
+  "host": "example.com%A0",
+  "hostname": "example.com%A0",
+  "href": "https://example.com%A0/",
+  "path": "/",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://faß.ExAmPlE/" 1`] = `
+Object {
+  "authority": "faß.ExAmPlE",
+  "host": "faß.ExAmPlE",
+  "hostname": "faß.ExAmPlE",
+  "href": "https://faß.ExAmPlE/",
+  "path": "/",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://foo:80/" 1`] = `
+Object {
+  "authority": "foo:80",
+  "host": "foo:80",
+  "hostname": "foo",
+  "href": "https://foo:80/",
+  "path": "/",
+  "port": "80",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://foo:443/" 1`] = `
+Object {
+  "authority": "foo:443",
+  "host": "foo:443",
+  "hostname": "foo",
+  "href": "https://foo:443/",
+  "path": "/",
+  "port": "443",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://localhost:3000/jqueryui@1.2.3" 1`] = `
+Object {
+  "authority": "localhost:3000",
+  "host": "localhost:3000",
+  "hostname": "localhost",
+  "href": "https://localhost:3000/jqueryui@1.2.3",
+  "path": "/jqueryui@1.2.3",
+  "port": "3000",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://test:@test" 1`] = `
+Object {
+  "authority": "test:@test",
+  "host": "test",
+  "hostname": "test",
+  "href": "https://test:@test",
+  "password": "",
+  "scheme": "https",
+  "userinfo": "test:",
+  "username": "test",
+}
+`;
+
+exports[`input: "https://user:pass[@foo/bar" 1`] = `
+Object {
+  "authority": "user:pass[@foo",
+  "host": "foo",
+  "hostname": "foo",
+  "href": "https://user:pass[@foo/bar",
+  "password": "pass[",
+  "path": "/bar",
+  "scheme": "https",
+  "userinfo": "user:pass[",
+  "username": "user",
+}
+`;
+
+exports[`input: "https://www.example.com/path{path.html?query'=query#fragment<fragment" 1`] = `
+Object {
+  "authority": "www.example.com",
+  "fragment": "fragment<fragment",
+  "host": "www.example.com",
+  "hostname": "www.example.com",
+  "href": "https://www.example.com/path{path.html?query'=query#fragment<fragment",
+  "path": "/path{path.html",
+  "query": "query'=query",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://x x:12" 1`] = `
+Object {
+  "authority": "x x:12",
+  "host": "x x:12",
+  "hostname": "x x",
+  "href": "https://x x:12",
+  "port": "12",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://x/�?�#�" 1`] = `
+Object {
+  "authority": "x",
+  "fragment": "�",
+  "host": "x",
+  "hostname": "x",
+  "href": "https://x/�?�#�",
+  "path": "/�",
+  "query": "�",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https://�" 1`] = `
+Object {
+  "authority": "�",
+  "host": "�",
+  "hostname": "�",
+  "href": "https://�",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https:/example.com/" 1`] = `
+Object {
+  "href": "https:/example.com/",
+  "path": "/example.com/",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https:@/www.example.com" 1`] = `
+Object {
+  "href": "https:@/www.example.com",
+  "path": "@/www.example.com",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "https:example.com/" 1`] = `
+Object {
+  "href": "https:example.com/",
+  "path": "example.com/",
+  "scheme": "https",
+}
+`;
+
+exports[`input: "i" 1`] = `
+Object {
+  "href": "i",
+  "path": "i",
+}
+`;
+
+exports[`input: "irc://myserver.com:6999/channel?passwd" 1`] = `
+Object {
+  "authority": "myserver.com:6999",
+  "host": "myserver.com:6999",
+  "hostname": "myserver.com",
+  "href": "irc://myserver.com:6999/channel?passwd",
+  "path": "/channel",
+  "port": "6999",
+  "query": "passwd",
+  "scheme": "irc",
+}
+`;
+
+exports[`input: "javascript:/../" 1`] = `
+Object {
+  "href": "javascript:/../",
+  "path": "/../",
+  "scheme": "javascript",
+}
+`;
+
+exports[`input: "javascript:/example.com/" 1`] = `
+Object {
+  "href": "javascript:/example.com/",
+  "path": "/example.com/",
+  "scheme": "javascript",
+}
+`;
+
+exports[`input: "javascript:example.com/" 1`] = `
+Object {
+  "href": "javascript:example.com/",
+  "path": "example.com/",
+  "scheme": "javascript",
+}
+`;
+
+exports[`input: "ldap://localhost:389/ou=People,o=JNDITutorial" 1`] = `
+Object {
+  "authority": "localhost:389",
+  "host": "localhost:389",
+  "hostname": "localhost",
+  "href": "ldap://localhost:389/ou=People,o=JNDITutorial",
+  "path": "/ou=People,o=JNDITutorial",
+  "port": "389",
+  "scheme": "ldap",
+}
+`;
+
+exports[`input: "lolscheme:x x#x x" 1`] = `
+Object {
+  "fragment": "x x",
+  "href": "lolscheme:x x#x x",
+  "path": "x x",
+  "scheme": "lolscheme",
+}
+`;
+
+exports[`input: "madeupscheme:/example.com/" 1`] = `
+Object {
+  "href": "madeupscheme:/example.com/",
+  "path": "/example.com/",
+  "scheme": "madeupscheme",
+}
+`;
+
+exports[`input: "madeupscheme:example.com/" 1`] = `
+Object {
+  "href": "madeupscheme:example.com/",
+  "path": "example.com/",
+  "scheme": "madeupscheme",
+}
+`;
+
+exports[`input: "mailto:/../" 1`] = `
+Object {
+  "href": "mailto:/../",
+  "path": "/../",
+  "scheme": "mailto",
+}
+`;
+
+exports[`input: "mailto:/example.com/" 1`] = `
+Object {
+  "href": "mailto:/example.com/",
+  "path": "/example.com/",
+  "scheme": "mailto",
+}
+`;
+
+exports[`input: "mailto:example.com/" 1`] = `
+Object {
+  "href": "mailto:example.com/",
+  "path": "example.com/",
+  "scheme": "mailto",
+}
+`;
+
+exports[`input: "non-spec:/..//" 1`] = `
+Object {
+  "href": "non-spec:/..//",
+  "path": "/..//",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-spec:/..//path" 1`] = `
+Object {
+  "href": "non-spec:/..//path",
+  "path": "/..//path",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-spec:/.//" 1`] = `
+Object {
+  "href": "non-spec:/.//",
+  "path": "/.//",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-spec:/.//path" 1`] = `
+Object {
+  "href": "non-spec:/.//path",
+  "path": "/.//path",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-spec://example.org/test?a#b\\u0000c" 1`] = `
+Object {
+  "authority": "example.org",
+  "fragment": "b c",
+  "host": "example.org",
+  "hostname": "example.org",
+  "href": "non-spec://example.org/test?a#b c",
+  "path": "/test",
+  "query": "a",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-spec:/a/..//" 1`] = `
+Object {
+  "href": "non-spec:/a/..//",
+  "path": "/a/..//",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-spec:/a/..//path" 1`] = `
+Object {
+  "href": "non-spec:/a/..//path",
+  "path": "/a/..//path",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-spec:/test?a#b\\u0000c" 1`] = `
+Object {
+  "fragment": "b c",
+  "href": "non-spec:/test?a#b c",
+  "path": "/test",
+  "query": "a",
+  "scheme": "non-spec",
+}
+`;
+
+exports[`input: "non-special://%E2%80%A0/" 1`] = `
+Object {
+  "authority": "%E2%80%A0",
+  "host": "%E2%80%A0",
+  "hostname": "%E2%80%A0",
+  "href": "non-special://%E2%80%A0/",
+  "path": "/",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://:@test/x" 1`] = `
+Object {
+  "authority": ":@test",
+  "host": "test",
+  "hostname": "test",
+  "href": "non-special://:@test/x",
+  "password": "",
+  "path": "/x",
+  "scheme": "non-special",
+  "userinfo": ":",
+  "username": "",
+}
+`;
+
+exports[`input: "non-special://[:80/" 1`] = `
+Object {
+  "authority": "",
+  "href": "non-special://[:80/",
+  "path": "[:80/",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://[1:2::3]:80/" 1`] = `
+Object {
+  "authority": "[1:2::3]:80",
+  "host": "[1:2::3]:80",
+  "hostname": "[1:2::3]",
+  "href": "non-special://[1:2::3]:80/",
+  "path": "/",
+  "port": "80",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://[1:2:0:0:0:0:0:3]/" 1`] = `
+Object {
+  "authority": "[1:2:0:0:0:0:0:3]",
+  "host": "[1:2:0:0:0:0:0:3]",
+  "hostname": "[1:2:0:0:0:0:0:3]",
+  "href": "non-special://[1:2:0:0:0:0:0:3]/",
+  "path": "/",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://[1:2:0:0:5:0:0:0]/" 1`] = `
+Object {
+  "authority": "[1:2:0:0:5:0:0:0]",
+  "host": "[1:2:0:0:5:0:0:0]",
+  "hostname": "[1:2:0:0:5:0:0:0]",
+  "href": "non-special://[1:2:0:0:5:0:0:0]/",
+  "path": "/",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://H%4fSt/path" 1`] = `
+Object {
+  "authority": "H%4fSt",
+  "host": "H%4fSt",
+  "hostname": "H%4fSt",
+  "href": "non-special://H%4fSt/path",
+  "path": "/path",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://a<b" 1`] = `
+Object {
+  "authority": "a<b",
+  "host": "a<b",
+  "hostname": "a<b",
+  "href": "non-special://a<b",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://a>b" 1`] = `
+Object {
+  "authority": "a>b",
+  "host": "a>b",
+  "hostname": "a>b",
+  "href": "non-special://a>b",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://a^b" 1`] = `
+Object {
+  "authority": "a^b",
+  "host": "a^b",
+  "hostname": "a^b",
+  "href": "non-special://a^b",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://f:999999/c" 1`] = `
+Object {
+  "authority": "f:999999",
+  "host": "f:999999",
+  "hostname": "f",
+  "href": "non-special://f:999999/c",
+  "path": "/c",
+  "port": "999999",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "non-special://test:@test/x" 1`] = `
+Object {
+  "authority": "test:@test",
+  "host": "test",
+  "hostname": "test",
+  "href": "non-special://test:@test/x",
+  "password": "",
+  "path": "/x",
+  "scheme": "non-special",
+  "userinfo": "test:",
+  "username": "test",
+}
+`;
+
+exports[`input: "non-special:cannot-be-a-base-url-\\u0000\\u0001\\u001f\\u001e~" 1`] = `
+Object {
+  "href": "non-special:cannot-be-a-base-url- ~",
+  "path": "cannot-be-a-base-url- ~",
+  "scheme": "non-special",
+}
+`;
+
+exports[`input: "notspecial://host/?'" 1`] = `
+Object {
+  "authority": "host",
+  "host": "host",
+  "hostname": "host",
+  "href": "notspecial://host/?'",
+  "path": "/",
+  "query": "'",
+  "scheme": "notspecial",
+}
+`;
+
+exports[`input: "path" 1`] = `
+Object {
+  "href": "path",
+  "path": "path",
+}
+`;
+
+exports[`input: "pix/submit.gif" 1`] = `
+Object {
+  "href": "pix/submit.gif",
+  "path": "pix/submit.gif",
+}
+`;
+
+exports[`input: "redis://foo:bar@somehost:6379/0?baz=bam&qux=baz" 1`] = `
+Object {
+  "authority": "foo:bar@somehost:6379",
+  "host": "somehost:6379",
+  "hostname": "somehost",
+  "href": "redis://foo:bar@somehost:6379/0?baz=bam&qux=baz",
+  "password": "bar",
+  "path": "/0",
+  "port": "6379",
+  "query": "baz=bam&qux=baz",
+  "scheme": "redis",
+  "userinfo": "foo:bar",
+  "username": "foo",
+}
+`;
+
+exports[`input: "rsync://foo@host:911/sup" 1`] = `
+Object {
+  "authority": "foo@host:911",
+  "host": "host:911",
+  "hostname": "host",
+  "href": "rsync://foo@host:911/sup",
+  "path": "/sup",
+  "port": "911",
+  "scheme": "rsync",
+  "userinfo": "foo",
+  "username": "foo",
+}
+`;
+
+exports[`input: "sc:" 1`] = `
+Object {
+  "href": "sc:",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc:// /" 1`] = `
+Object {
+  "authority": " ",
+  "host": " ",
+  "hostname": " ",
+  "href": "sc:// /",
+  "path": "/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://#" 1`] = `
+Object {
+  "authority": "#",
+  "host": "#",
+  "hostname": "#",
+  "href": "sc://#",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://%/" 1`] = `
+Object {
+  "authority": "%",
+  "host": "%",
+  "hostname": "%",
+  "href": "sc://%/",
+  "path": "/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://:/" 1`] = `
+Object {
+  "authority": ":",
+  "host": ":",
+  "href": "sc://:/",
+  "path": "/",
+  "port": "",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://:12/" 1`] = `
+Object {
+  "authority": ":12",
+  "host": ":12",
+  "href": "sc://:12/",
+  "path": "/",
+  "port": "12",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://?" 1`] = `
+Object {
+  "authority": "?",
+  "host": "?",
+  "hostname": "?",
+  "href": "sc://?",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://@/" 1`] = `
+Object {
+  "authority": "@",
+  "href": "sc://@/",
+  "path": "/",
+  "scheme": "sc",
+  "userinfo": "",
+}
+`;
+
+exports[`input: "sc://[/" 1`] = `
+Object {
+  "authority": "",
+  "href": "sc://[/",
+  "path": "[/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://\\\\/" 1`] = `
+Object {
+  "authority": "",
+  "href": "sc://\\\\/",
+  "path": "\\\\/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://\\u0000/" 1`] = `
+Object {
+  "authority": " ",
+  "host": " ",
+  "hostname": " ",
+  "href": "sc:// /",
+  "path": "/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://\\u001f!\\"$&'()*+,-.;=_\`{}~/" 1`] = `
+Object {
+  "authority": "!\\"$&'()*+,-.;=_\`{}~",
+  "host": "!\\"$&'()*+,-.;=_\`{}~",
+  "hostname": "!\\"$&'()*+,-.;=_\`{}~",
+  "href": "sc://!\\"$&'()*+,-.;=_\`{}~/",
+  "path": "/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://]/" 1`] = `
+Object {
+  "authority": "]",
+  "host": "]",
+  "hostname": "]",
+  "href": "sc://]/",
+  "path": "/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://faß.ExAmPlE/" 1`] = `
+Object {
+  "authority": "faß.ExAmPlE",
+  "host": "faß.ExAmPlE",
+  "hostname": "faß.ExAmPlE",
+  "href": "sc://faß.ExAmPlE/",
+  "path": "/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://te@s:t@/" 1`] = `
+Object {
+  "authority": "te@s:t@",
+  "href": "sc://te@s:t@/",
+  "password": "t",
+  "path": "/",
+  "scheme": "sc",
+  "userinfo": "te@s:t",
+  "username": "te@s",
+}
+`;
+
+exports[`input: "sc://ñ" 1`] = `
+Object {
+  "authority": "ñ",
+  "host": "ñ",
+  "hostname": "ñ",
+  "href": "sc://ñ",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://ñ#x" 1`] = `
+Object {
+  "authority": "ñ#x",
+  "host": "ñ#x",
+  "hostname": "ñ#x",
+  "href": "sc://ñ#x",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://ñ.test/" 1`] = `
+Object {
+  "authority": "ñ.test",
+  "host": "ñ.test",
+  "hostname": "ñ.test",
+  "href": "sc://ñ.test/",
+  "path": "/",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc://ñ?x" 1`] = `
+Object {
+  "authority": "ñ?x",
+  "host": "ñ?x",
+  "hostname": "ñ?x",
+  "href": "sc://ñ?x",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc::a@example.net" 1`] = `
+Object {
+  "href": "sc::a@example.net",
+  "path": ":a@example.net",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "sc:\\\\../" 1`] = `
+Object {
+  "href": "sc:\\\\../",
+  "path": "\\\\../",
+  "scheme": "sc",
+}
+`;
+
+exports[`input: "ssh://example.com/foo/bar.git" 1`] = `
+Object {
+  "authority": "example.com",
+  "host": "example.com",
+  "hostname": "example.com",
+  "href": "ssh://example.com/foo/bar.git",
+  "path": "/foo/bar.git",
+  "scheme": "ssh",
+}
+`;
+
+exports[`input: "tag:joe@example.org,2001:foo/bar" 1`] = `
+Object {
+  "href": "tag:joe@example.org,2001:foo/bar",
+  "path": "joe@example.org,2001:foo/bar",
+  "scheme": "tag",
+}
+`;
+
+exports[`input: "tel:1234567890" 1`] = `
+Object {
+  "href": "tel:1234567890",
+  "path": "1234567890",
+  "scheme": "tel",
+}
+`;
+
+exports[`input: "telnet://user:pass@foobar.com:23/" 1`] = `
+Object {
+  "authority": "user:pass@foobar.com:23",
+  "host": "foobar.com:23",
+  "hostname": "foobar.com",
+  "href": "telnet://user:pass@foobar.com:23/",
+  "password": "pass",
+  "path": "/",
+  "port": "23",
+  "scheme": "telnet",
+  "userinfo": "user:pass",
+  "username": "user",
+}
+`;
+
+exports[`input: "test" 1`] = `
+Object {
+  "href": "test",
+  "path": "test",
+}
+`;
+
+exports[`input: "test.txt" 1`] = `
+Object {
+  "href": "test.txt",
+  "path": "test.txt",
+}
+`;
+
+exports[`input: "test-a-colon.html" 1`] = `
+Object {
+  "href": "test-a-colon.html",
+  "path": "test-a-colon.html",
+}
+`;
+
+exports[`input: "test-a-colon-b.html" 1`] = `
+Object {
+  "href": "test-a-colon-b.html",
+  "path": "test-a-colon-b.html",
+}
+`;
+
+exports[`input: "test-a-colon-slash.html" 1`] = `
+Object {
+  "href": "test-a-colon-slash.html",
+  "path": "test-a-colon-slash.html",
+}
+`;
+
+exports[`input: "test-a-colon-slash-b.html" 1`] = `
+Object {
+  "href": "test-a-colon-slash-b.html",
+  "path": "test-a-colon-slash-b.html",
+}
+`;
+
+exports[`input: "test-a-colon-slash-slash.html" 1`] = `
+Object {
+  "href": "test-a-colon-slash-slash.html",
+  "path": "test-a-colon-slash-slash.html",
+}
+`;
+
+exports[`input: "test-a-colon-slash-slash-b.html" 1`] = `
+Object {
+  "href": "test-a-colon-slash-slash-b.html",
+  "path": "test-a-colon-slash-slash-b.html",
+}
+`;
+
+exports[`input: "tftp://foobar.com/someconfig;mode=netascii" 1`] = `
+Object {
+  "authority": "foobar.com",
+  "host": "foobar.com",
+  "hostname": "foobar.com",
+  "href": "tftp://foobar.com/someconfig;mode=netascii",
+  "path": "/someconfig;mode=netascii",
+  "scheme": "tftp",
+}
+`;
+
+exports[`input: "urn:ietf:rfc:2648" 1`] = `
+Object {
+  "href": "urn:ietf:rfc:2648",
+  "path": "ietf:rfc:2648",
+  "scheme": "urn",
+}
+`;
+
+exports[`input: "ut2004://10.10.10.10:7777/Index.ut2" 1`] = `
+Object {
+  "authority": "10.10.10.10:7777",
+  "host": "10.10.10.10:7777",
+  "hostname": "10.10.10.10",
+  "href": "ut2004://10.10.10.10:7777/Index.ut2",
+  "path": "/Index.ut2",
+  "port": "7777",
+  "scheme": "ut2004",
+}
+`;
+
+exports[`input: "wow:%1G" 1`] = `
+Object {
+  "href": "wow:%1G",
+  "path": "%1G",
+  "scheme": "wow",
+}
+`;
+
+exports[`input: "wow:%NBD" 1`] = `
+Object {
+  "href": "wow:%NBD",
+  "path": "%NBD",
+  "scheme": "wow",
+}
+`;
+
+exports[`input: "wow:￿" 1`] = `
+Object {
+  "href": "wow:￿",
+  "path": "￿",
+  "scheme": "wow",
+}
+`;
+
+exports[`input: "ws://foo:80/" 1`] = `
+Object {
+  "authority": "foo:80",
+  "host": "foo:80",
+  "hostname": "foo",
+  "href": "ws://foo:80/",
+  "path": "/",
+  "port": "80",
+  "scheme": "ws",
+}
+`;
+
+exports[`input: "ws://foo:81/" 1`] = `
+Object {
+  "authority": "foo:81",
+  "host": "foo:81",
+  "hostname": "foo",
+  "href": "ws://foo:81/",
+  "path": "/",
+  "port": "81",
+  "scheme": "ws",
+}
+`;
+
+exports[`input: "ws://foo:443/" 1`] = `
+Object {
+  "authority": "foo:443",
+  "host": "foo:443",
+  "hostname": "foo",
+  "href": "ws://foo:443/",
+  "path": "/",
+  "port": "443",
+  "scheme": "ws",
+}
+`;
+
+exports[`input: "ws://foo:815/" 1`] = `
+Object {
+  "authority": "foo:815",
+  "host": "foo:815",
+  "hostname": "foo",
+  "href": "ws://foo:815/",
+  "path": "/",
+  "port": "815",
+  "scheme": "ws",
+}
+`;
+
+exports[`input: "ws:/example.com/" 1`] = `
+Object {
+  "href": "ws:/example.com/",
+  "path": "/example.com/",
+  "scheme": "ws",
+}
+`;
+
+exports[`input: "ws:example.com/" 1`] = `
+Object {
+  "href": "ws:example.com/",
+  "path": "example.com/",
+  "scheme": "ws",
+}
+`;
+
+exports[`input: "wss:// !\\"$%&'()*+,-.;<=>@[]^_\`{|}~@host/" 1`] = `
+Object {
+  "authority": " !\\"$%&'()*+,-.;<=>@[]^_\`{|}~@host",
+  "host": "host",
+  "hostname": "host",
+  "href": "wss:// !\\"$%&'()*+,-.;<=>@[]^_\`{|}~@host/",
+  "path": "/",
+  "scheme": "wss",
+  "userinfo": " !\\"$%&'()*+,-.;<=>@[]^_\`{|}~",
+  "username": " !\\"$%&'()*+,-.;<=>@[]^_\`{|}~",
+}
+`;
+
+exports[`input: "wss://!\\"$&'()*+,-.;=_\`{}~/" 1`] = `
+Object {
+  "authority": "!\\"$&'()*+,-.;=_\`{}~",
+  "host": "!\\"$&'()*+,-.;=_\`{}~",
+  "hostname": "!\\"$&'()*+,-.;=_\`{}~",
+  "href": "wss://!\\"$&'()*+,-.;=_\`{}~/",
+  "path": "/",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://foo:80/" 1`] = `
+Object {
+  "authority": "foo:80",
+  "host": "foo:80",
+  "hostname": "foo",
+  "href": "wss://foo:80/",
+  "path": "/",
+  "port": "80",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://foo:81/" 1`] = `
+Object {
+  "authority": "foo:81",
+  "host": "foo:81",
+  "hostname": "foo",
+  "href": "wss://foo:81/",
+  "path": "/",
+  "port": "81",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://foo:443/" 1`] = `
+Object {
+  "authority": "foo:443",
+  "host": "foo:443",
+  "hostname": "foo",
+  "href": "wss://foo:443/",
+  "path": "/",
+  "port": "443",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://foo:815/" 1`] = `
+Object {
+  "authority": "foo:815",
+  "host": "foo:815",
+  "hostname": "foo",
+  "href": "wss://foo:815/",
+  "path": "/",
+  "port": "815",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://host/ !\\"$%&'()*+,-./:;<=>@[\\\\]^_\`{|}~" 1`] = `
+Object {
+  "authority": "host",
+  "host": "host",
+  "hostname": "host",
+  "href": "wss://host/ !\\"$%&'()*+,-./:;<=>@[\\\\]^_\`{|}~",
+  "path": "/ !\\"$%&'()*+,-./:;<=>@[\\\\]^_\`{|}~",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://host/dir/# !\\"#$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~" 1`] = `
+Object {
+  "authority": "host",
+  "fragment": " !\\"#$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "host": "host",
+  "hostname": "host",
+  "href": "wss://host/dir/# !\\"#$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "path": "/dir/",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://host/dir/? !\\"$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~" 1`] = `
+Object {
+  "authority": "host",
+  "host": "host",
+  "hostname": "host",
+  "href": "wss://host/dir/? !\\"$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "path": "/dir/",
+  "query": " !\\"$%&'()*+,-./:;<=>?@[\\\\]^_\`{|}~",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss://joe: !\\"$%&'()*+,-.:;<=>@[]^_\`{|}~@host/" 1`] = `
+Object {
+  "authority": "joe: !\\"$%&'()*+,-.:;<=>@[]^_\`{|}~@host",
+  "host": "host",
+  "hostname": "host",
+  "href": "wss://joe: !\\"$%&'()*+,-.:;<=>@[]^_\`{|}~@host/",
+  "password": " !\\"$%&'()*+,-.:;<=>@[]^_\`{|}~",
+  "path": "/",
+  "scheme": "wss",
+  "userinfo": "joe: !\\"$%&'()*+,-.:;<=>@[]^_\`{|}~",
+  "username": "joe",
+}
+`;
+
+exports[`input: "wss:/example.com/" 1`] = `
+Object {
+  "href": "wss:/example.com/",
+  "path": "/example.com/",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "wss:example.com/" 1`] = `
+Object {
+  "href": "wss:example.com/",
+  "path": "example.com/",
+  "scheme": "wss",
+}
+`;
+
+exports[`input: "x" 1`] = `
+Object {
+  "href": "x",
+  "path": "x",
+}
+`;
+
+exports[`input: "中/test.txt" 1`] = `
+Object {
+  "href": "中/test.txt",
+  "path": "中/test.txt",
+}
+`;
